@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="webserver" default="deploy" basedir="/home/zhaole/causaltest/causalwebserver">
+	<property environment="env" />
+	<property name="webapp.name" value="webserver" />
+	<property name="tomcat.home" value="/home/zhaole/tomcat" />
+	<property name="dist.dir" value="${basedir}/dist" />
+	<property name="ant.dir" value="/home/zhaole/apache-ant-1.10.5" />
+	<property name="webRoot.dir" value="${basedir}/src/main/webapp" />
+	<property name="src.dir" value="${basedir}/src/main/java" />
+	<property name="config.dir" value="${basedir}/src/main/resources" />
+	<property name="lib.dir" value="${webRoot.dir}/lib" />
+	<property name="build.dir" value="${basedir}/src/main/webapp" />
+	<property name="log.file" value="${tomcat.home}/webapps/log.info"/>
+	
+	<!--property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter" /-->
+ 
+	<tstamp>
+		<format property="build.time" pattern="yyyy-MM-dd HH:mm:ss" />
+	</tstamp>
+	
+	<echo>${build.time}</echo>
+	
+	<!-- 初始化classpath -->
+	<path id="project.classpath">
+		<fileset dir="${lib.dir}">
+			<include name="**/*.jar" />
+		</fileset>
+		<!-- 添加tomcat类路径 -->
+		<fileset dir="${tomcat.home}/lib">
+			<include name="*.jar" />
+		</fileset>
+		<!-- ant lib包  -->
+		<fileset dir="${ant.dir}">
+			<include name="**/*.jar" />
+		</fileset>
+		<pathelement location="${build.dir}/classes"/>
+	</path>
+ 
+	<!-- ************************** 下面3个方法都是显示classpath ******************************************* -->
+	<!-- 这个运行失败。抽空研究研究怎么回事！！
+	     	<macrodef name="echo-path">
+		<attribute name="pathref" />
+		<sequential>
+			<echo>echoing path=@{pathref}</echo>
+			<for param="fromfile">
+				<path refid="@{pathref}"  />
+				<sequential>
+					<echo>@{fromfile}</echo>
+				</sequential>
+			</for>
+		</sequential>
+	</macrodef>
+	<target name="print_classpath1">
+		<echo-path pathref="project.classpath" />
+	</target>
+	-->
+	
+	<target name="print_classpath2">
+		<property name="myclasspath" refid="project.classpath"/>
+		<!-- 显示所有properties值
+		     		 <echoproperties></echoproperties> -->
+		<echo message="Classpath = ${myclasspath}"/>
+	</target>
+	
+	<!-- get the source compile classpath in a printable form -->
+	<pathconvert pathsep="${line.separator}|   |-- "
+             property="echo.path.compile"
+             refid="project.classpath">
+	</pathconvert>
+	<target name="print_classpath3">
+		<echo message="|-- compile classpath"/>
+		<echo message="|   |"/>
+		<echo message="|   |-- ${echo.path.compile}"/>
+	</target>
+	<!-- **************************OVER：显示classpath ******************************************* -->		
+	
+	<!-- 删除之前的目录结构 -->
+	<target name="clear" description="清理旧文件">
+		<echo>删除之前的目录结构</echo>
+		<delete dir="${build.dir}" />
+		<delete dir="${dist.dir}" />
+		<delete file="${tomcat.home}/webapps/${webapp.name}.war" />
+		<delete dir="${tomcat.home}/webapps/${webapp.name}" />
+	</target>
+ 
+	<!-- 创建目录结构 -->
+	<target name="init"  description="创建初始化目录结构">
+		<echo>创建初始化目录结构</echo>
+		<mkdir dir="${build.dir}/classes" />
+		<mkdir dir="${dist.dir}" />
+		<touch file="${log.file}" />
+	</target>
+ 
+	<!-- 编译java -->
+	<target name="compile" depends="init" description="编译java文件">
+		<echo>编译java文件</echo>
+		<javac srcdir="${src.dir}" destdir="${build.dir}/classes" 
+			includeantruntime="false" nowarn="on" 
+			source="1.8" target="1.8" deprecation="true" debug="true" 
+			encoding="UTF-8" classpathref="project.classpath" 
+			>
+			<compilerarg line="-Xlint:unchecked" />
+			<!-- <classpath refid="project.classpath" /> -->
+		</javac>
+		<copy todir="${build.dir}" overwrite="true">
+			<fileset dir="${src.dir}" excludes="**/*.java">
+				<!--
+				     				<include name="**/*.xml" />
+				<include name="**/*.properties" />
+				<include name="**/*.sql" />
+				-->
+			</fileset>
+			<fileset dir="${config.dir}" />
+		</copy>
+	</target>
+ 
+	<!-- 将class文件打成 jar包 -->
+	<!--  
+	      	    <target name="pack" depends="compile"> 
+	        <jar jarfile="${build.dir}/${webapp.name}.jar"> 
+	            <fileset dir="${build.dir}/classes"> 
+	                <include name="**/*.class"/> 
+	            </fileset> 
+	        </jar> 
+	    </target> 
+	-->
+ 
+	<!-- 打成war包, 名称默认为 项目名 -->
+	<target name="war" depends="compile" description="将工程打成war包">
+		<echo>将工程打成war包</echo>
+		<war destfile="${dist.dir}/${webapp.name}.war" basedir="${webRoot.dir}" 
+			webxml="${webRoot.dir}/WEB-INF/web.xml">
+			<lib dir="${lib.dir}" />
+			<classes dir="${build.dir}/classes" />
+			<fileset dir="${webRoot.dir}">
+				<include name="***.*" />
+			</fileset>
+		</war>
+	</target>
+ 
+	<!-- copy war包 tomcat的deploy目录 -->
+	<target name="deploy" depends="war" description="部署项目">
+		<echo>${build.time}部署项目</echo>
+		<delete file="${tomcat.home}/webapps/${webapp.name}.war" />
+		<delete dir="${tomcat.home}/webapps/${webapp.name}" />
+		<copy file="${dist.dir}/${webapp.name}.war" todir="${tomcat.home}/webapps" />
+	</target>
+	
+	<!--********************** 启停tomcat的两种方法  ***********************************-->
+	<!-- 在命令行界面显示tomcat控制台 -->
+	<target name="stop_tomcat">
+		<echo>停止tomcat</echo>
+		<exec dir="${tomcat.home}/bin" executable="bash"> 
+			<env key="CATALINA_HOME" path="${tomcat.home}"/> 
+			<arg value="shutdown.sh"/>
+ 		</exec>
+	</target>
+ 
+	<target name="start_tomcat">
+		<echo>启动tomcat</echo>
+		<exec dir="${tomcat.home}/bin" executable="bash"> 
+			<env key="CATALINA_HOME" path="${tomcat.home}"/> 
+			<arg value="startup.sh"/>
+ 		</exec>
+	</target>
+	
+	<!--********************** OVER：启停tomcat  ***********************************-->
+</project>
+
