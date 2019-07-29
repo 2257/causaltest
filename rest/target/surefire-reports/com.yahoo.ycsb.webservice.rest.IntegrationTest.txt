@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.yahoo.ycsb.webservice.rest.IntegrationTest
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 8, Errors: 0, Skipped: 0, Time elapsed: 5.014 sec <<< FAILURE!
-testDeleteOpsBenchmarkFailure(com.yahoo.ycsb.webservice.rest.IntegrationTest)  Time elapsed: 0.488 sec  <<< FAILURE!
+Tests run: 8, Failures: 8, Errors: 0, Skipped: 0, Time elapsed: 4.65 sec <<< FAILURE!
+testDeleteOpsBenchmarkFailure(com.yahoo.ycsb.webservice.rest.IntegrationTest)  Time elapsed: 0.41 sec  <<< FAILURE!
 java.lang.AssertionError: expected:<true> but was:<false>
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -38,7 +38,7 @@ java.lang.AssertionError: expected:<true> but was:<false>
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-testDeleteOpsBenchmarkSuccess(com.yahoo.ycsb.webservice.rest.IntegrationTest)  Time elapsed: 0.623 sec  <<< FAILURE!
+testDeleteOpsBenchmarkSuccess(com.yahoo.ycsb.webservice.rest.IntegrationTest)  Time elapsed: 0.64 sec  <<< FAILURE!
 java.lang.AssertionError: expected:<true> but was:<false>
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -74,7 +74,7 @@ java.lang.AssertionError: expected:<true> but was:<false>
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-testInsertOpsBenchmarkFailure(com.yahoo.ycsb.webservice.rest.IntegrationTest)  Time elapsed: 0.067 sec  <<< FAILURE!
+testInsertOpsBenchmarkFailure(com.yahoo.ycsb.webservice.rest.IntegrationTest)  Time elapsed: 0.414 sec  <<< FAILURE!
 java.lang.AssertionError: expected:<true> but was:<false>
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -110,7 +110,7 @@ java.lang.AssertionError: expected:<true> but was:<false>
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-testInsertOpsBenchmarkSuccess(com.yahoo.ycsb.webservice.rest.IntegrationTest)  Time elapsed: 0.442 sec  <<< FAILURE!
+testInsertOpsBenchmarkSuccess(com.yahoo.ycsb.webservice.rest.IntegrationTest)  Time elapsed: 0.088 sec  <<< FAILURE!
 java.lang.AssertionError: expected:<true> but was:<false>
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -146,7 +146,7 @@ java.lang.AssertionError: expected:<true> but was:<false>
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-testReadOpsBenchmarkFailure(com.yahoo.ycsb.webservice.rest.IntegrationTest)  Time elapsed: 0.343 sec  <<< FAILURE!
+testReadOpsBenchmarkFailure(com.yahoo.ycsb.webservice.rest.IntegrationTest)  Time elapsed: 0.367 sec  <<< FAILURE!
 java.lang.AssertionError: expected:<true> but was:<false>
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -182,7 +182,7 @@ java.lang.AssertionError: expected:<true> but was:<false>
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-testReadOpsBenchmarkSuccess(com.yahoo.ycsb.webservice.rest.IntegrationTest)  Time elapsed: 0.48 sec  <<< FAILURE!
+testReadOpsBenchmarkSuccess(com.yahoo.ycsb.webservice.rest.IntegrationTest)  Time elapsed: 0.215 sec  <<< FAILURE!
 java.lang.AssertionError: expected:<true> but was:<false>
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -218,7 +218,7 @@ java.lang.AssertionError: expected:<true> but was:<false>
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-testUpdateOpsBenchmarkFailure(com.yahoo.ycsb.webservice.rest.IntegrationTest)  Time elapsed: 0.856 sec  <<< FAILURE!
+testUpdateOpsBenchmarkFailure(com.yahoo.ycsb.webservice.rest.IntegrationTest)  Time elapsed: 0.187 sec  <<< FAILURE!
 java.lang.AssertionError: expected:<true> but was:<false>
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -254,7 +254,7 @@ java.lang.AssertionError: expected:<true> but was:<false>
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-testUpdateOpsBenchmarkSuccess(com.yahoo.ycsb.webservice.rest.IntegrationTest)  Time elapsed: 0.429 sec  <<< FAILURE!
+testUpdateOpsBenchmarkSuccess(com.yahoo.ycsb.webservice.rest.IntegrationTest)  Time elapsed: 0.949 sec  <<< FAILURE!
 java.lang.AssertionError: expected:<true> but was:<false>
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)

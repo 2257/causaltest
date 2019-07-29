@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="17" failures="12" name="com.yahoo.ycsb.webservice.rest.RestClientTest" time="0.648" errors="0" skipped="0">
+<testsuite tests="17" failures="12" name="com.yahoo.ycsb.webservice.rest.RestClientTest" time="0.517" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/home/zl/Documents/jdk1.8.0_211/jre/lib/amd64"/>
@@ -61,7 +61,7 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="read_200" time="0.32">
+  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="read_200" time="0.363">
     <failure message="expected:&lt;Status [name=OK, description=The operation completed successfully.]&gt; but was:&lt;Status [name=NOT_FOUND, description=The requested record was not found.]&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;Status [name=OK, description=The operation completed successfully.]&gt; but was:&lt;Status [name=NOT_FOUND, description=The requested record was not found.]&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -103,23 +103,23 @@
     <system-out>databasename=null
 [httpGet] resource_valid___{response=}__404
 </system-out>
-    <system-err>Jul 28, 2019 11:49:16 PM org.apache.coyote.AbstractProtocol init
+    <system-err>Jul 29, 2019 2:23:14 AM org.apache.coyote.AbstractProtocol init
 INFO: Initializing ProtocolHandler [&quot;http-nio-8080&quot;]
-Jul 28, 2019 11:49:16 PM org.apache.tomcat.util.net.NioSelectorPool getSharedSelector
+Jul 29, 2019 2:23:14 AM org.apache.tomcat.util.net.NioSelectorPool getSharedSelector
 INFO: Using a shared selector for servlet write/read
-Jul 28, 2019 11:49:16 PM org.apache.catalina.core.StandardService startInternal
+Jul 29, 2019 2:23:14 AM org.apache.catalina.core.StandardService startInternal
 INFO: Starting service Tomcat
-Jul 28, 2019 11:49:16 PM org.apache.catalina.core.StandardEngine startInternal
+Jul 29, 2019 2:23:14 AM org.apache.catalina.core.StandardEngine startInternal
 INFO: Starting Servlet Engine: Apache Tomcat/8.0.28
-Jul 28, 2019 11:49:16 PM org.apache.catalina.startup.ContextConfig getDefaultWebXmlFragment
+Jul 29, 2019 2:23:14 AM org.apache.catalina.startup.ContextConfig getDefaultWebXmlFragment
 INFO: No global web.xml found
-Jul 28, 2019 11:49:16 PM org.apache.jasper.servlet.TldScanner scanJars
+Jul 29, 2019 2:23:14 AM org.apache.jasper.servlet.TldScanner scanJars
 INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-Jul 28, 2019 11:49:16 PM org.apache.coyote.AbstractProtocol start
+Jul 29, 2019 2:23:15 AM org.apache.coyote.AbstractProtocol start
 INFO: Starting ProtocolHandler [&quot;http-nio-8080&quot;]
 </system-err>
   </testcase>
-  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="read_403" time="0.081">
+  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="read_403" time="0.028">
     <failure message="expected:&lt;Status [name=FORBIDDEN, description=The operation is forbidden.]&gt; but was:&lt;Status [name=NOT_FOUND, description=The requested record was not found.]&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;Status [name=FORBIDDEN, description=The operation is forbidden.]&gt; but was:&lt;Status [name=NOT_FOUND, description=The requested record was not found.]&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -161,8 +161,8 @@ INFO: Starting ProtocolHandler [&quot;http-nio-8080&quot;]
     <system-out>[httpGet] resource_unauthorized___{response=}__404
 </system-out>
   </testcase>
-  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="read_404" time="0.033"/>
-  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="read_500" time="0.025">
+  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="read_404" time="0.005"/>
+  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="read_500" time="0.005">
     <failure message="expected:&lt;Status [name=ERROR, description=The operation failed.]&gt; but was:&lt;Status [name=NOT_FOUND, description=The requested record was not found.]&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;Status [name=ERROR, description=The operation failed.]&gt; but was:&lt;Status [name=NOT_FOUND, description=The requested record was not found.]&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -204,7 +204,7 @@ INFO: Starting ProtocolHandler [&quot;http-nio-8080&quot;]
     <system-out>[httpGet] resource_invalid___{response=}__404
 </system-out>
   </testcase>
-  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="update_200" time="0.01">
+  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="update_200" time="0.007">
     <failure message="expected:&lt;Status [name=OK, description=The operation completed successfully.]&gt; but was:&lt;Status [name=NOT_FOUND, description=The requested record was not found.]&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;Status [name=OK, description=The operation completed successfully.]&gt; but was:&lt;Status [name=NOT_FOUND, description=The requested record was not found.]&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -244,7 +244,7 @@ INFO: Starting ProtocolHandler [&quot;http-nio-8080&quot;]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
   </testcase>
-  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="update_403" time="0.003">
+  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="update_403" time="0.005">
     <failure message="expected:&lt;Status [name=FORBIDDEN, description=The operation is forbidden.]&gt; but was:&lt;Status [name=NOT_FOUND, description=The requested record was not found.]&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;Status [name=FORBIDDEN, description=The operation is forbidden.]&gt; but was:&lt;Status [name=NOT_FOUND, description=The requested record was not found.]&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -285,7 +285,7 @@ INFO: Starting ProtocolHandler [&quot;http-nio-8080&quot;]
 </failure>
   </testcase>
   <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="update_404" time="0.003"/>
-  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="update_500" time="0.003">
+  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="update_500" time="0.004">
     <failure message="expected:&lt;Status [name=ERROR, description=The operation failed.]&gt; but was:&lt;Status [name=NOT_FOUND, description=The requested record was not found.]&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;Status [name=ERROR, description=The operation failed.]&gt; but was:&lt;Status [name=NOT_FOUND, description=The requested record was not found.]&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -326,7 +326,7 @@ INFO: Starting ProtocolHandler [&quot;http-nio-8080&quot;]
 </failure>
   </testcase>
   <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="scan" time="0"/>
-  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="insert_200" time="0.028">
+  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="insert_200" time="0.031">
     <failure message="expected:&lt;Status [name=OK, description=The operation completed successfully.]&gt; but was:&lt;Status [name=NOT_FOUND, description=The requested record was not found.]&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;Status [name=OK, description=The operation completed successfully.]&gt; but was:&lt;Status [name=NOT_FOUND, description=The requested record was not found.]&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -366,7 +366,7 @@ INFO: Starting ProtocolHandler [&quot;http-nio-8080&quot;]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
   </testcase>
-  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="insert_403" time="0.008">
+  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="insert_403" time="0.003">
     <failure message="expected:&lt;Status [name=FORBIDDEN, description=The operation is forbidden.]&gt; but was:&lt;Status [name=NOT_FOUND, description=The requested record was not found.]&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;Status [name=FORBIDDEN, description=The operation is forbidden.]&gt; but was:&lt;Status [name=NOT_FOUND, description=The requested record was not found.]&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -406,8 +406,8 @@ INFO: Starting ProtocolHandler [&quot;http-nio-8080&quot;]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
   </testcase>
-  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="insert_404" time="0.061"/>
-  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="insert_500" time="0.015">
+  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="insert_404" time="0.027"/>
+  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="insert_500" time="0.003">
     <failure message="expected:&lt;Status [name=ERROR, description=The operation failed.]&gt; but was:&lt;Status [name=NOT_FOUND, description=The requested record was not found.]&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;Status [name=ERROR, description=The operation failed.]&gt; but was:&lt;Status [name=NOT_FOUND, description=The requested record was not found.]&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -447,7 +447,7 @@ INFO: Starting ProtocolHandler [&quot;http-nio-8080&quot;]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
   </testcase>
-  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="delete_200" time="0.021">
+  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="delete_200" time="0.003">
     <failure message="expected:&lt;Status [name=OK, description=The operation completed successfully.]&gt; but was:&lt;Status [name=NOT_FOUND, description=The requested record was not found.]&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;Status [name=OK, description=The operation completed successfully.]&gt; but was:&lt;Status [name=NOT_FOUND, description=The requested record was not found.]&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -487,7 +487,7 @@ INFO: Starting ProtocolHandler [&quot;http-nio-8080&quot;]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
   </testcase>
-  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="delete_403" time="0.002">
+  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="delete_403" time="0.006">
     <failure message="expected:&lt;Status [name=FORBIDDEN, description=The operation is forbidden.]&gt; but was:&lt;Status [name=NOT_FOUND, description=The requested record was not found.]&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;Status [name=FORBIDDEN, description=The operation is forbidden.]&gt; but was:&lt;Status [name=NOT_FOUND, description=The requested record was not found.]&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -527,8 +527,8 @@ INFO: Starting ProtocolHandler [&quot;http-nio-8080&quot;]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
   </testcase>
-  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="delete_404" time="0.013"/>
-  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="delete_500" time="0.022">
+  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="delete_404" time="0.014"/>
+  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="delete_500" time="0.01">
     <failure message="expected:&lt;Status [name=ERROR, description=The operation failed.]&gt; but was:&lt;Status [name=NOT_FOUND, description=The requested record was not found.]&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;Status [name=ERROR, description=The operation failed.]&gt; but was:&lt;Status [name=NOT_FOUND, description=The requested record was not found.]&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)

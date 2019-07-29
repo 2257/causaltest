@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="8" failures="8" name="com.yahoo.ycsb.webservice.rest.IntegrationTest" time="3.728" errors="0" skipped="0">
+<testsuite tests="8" failures="8" name="com.yahoo.ycsb.webservice.rest.IntegrationTest" time="3.27" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/home/zl/Documents/jdk1.8.0_211/jre/lib/amd64"/>
@@ -61,7 +61,7 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.yahoo.ycsb.webservice.rest.IntegrationTest" name="testDeleteOpsBenchmarkFailure" time="0.488">
+  <testcase classname="com.yahoo.ycsb.webservice.rest.IntegrationTest" name="testDeleteOpsBenchmarkFailure" time="0.41">
     <failure message="expected:&lt;true&gt; but was:&lt;false&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;false&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -107,19 +107,19 @@ java.lang.ArrayIndexOutOfBoundsException: -1
 	at com.yahoo.ycsb.ClientThread.run(Client.java:455)
 	at java.lang.Thread.run(Thread.java:748)
 </system-out>
-    <system-err>Jul 28, 2019 11:49:19 PM org.apache.coyote.AbstractProtocol init
+    <system-err>Jul 29, 2019 2:23:17 AM org.apache.coyote.AbstractProtocol init
 INFO: Initializing ProtocolHandler [&quot;http-nio-8081&quot;]
-Jul 28, 2019 11:49:19 PM org.apache.tomcat.util.net.NioSelectorPool getSharedSelector
+Jul 29, 2019 2:23:17 AM org.apache.tomcat.util.net.NioSelectorPool getSharedSelector
 INFO: Using a shared selector for servlet write/read
-Jul 28, 2019 11:49:19 PM org.apache.catalina.core.StandardService startInternal
+Jul 29, 2019 2:23:17 AM org.apache.catalina.core.StandardService startInternal
 INFO: Starting service Tomcat
-Jul 28, 2019 11:49:19 PM org.apache.catalina.core.StandardEngine startInternal
+Jul 29, 2019 2:23:17 AM org.apache.catalina.core.StandardEngine startInternal
 INFO: Starting Servlet Engine: Apache Tomcat/8.0.28
-Jul 28, 2019 11:49:19 PM org.apache.catalina.startup.ContextConfig getDefaultWebXmlFragment
+Jul 29, 2019 2:23:17 AM org.apache.catalina.startup.ContextConfig getDefaultWebXmlFragment
 INFO: No global web.xml found
-Jul 28, 2019 11:49:19 PM org.apache.jasper.servlet.TldScanner scanJars
+Jul 29, 2019 2:23:17 AM org.apache.jasper.servlet.TldScanner scanJars
 INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-Jul 28, 2019 11:49:19 PM org.apache.coyote.AbstractProtocol start
+Jul 29, 2019 2:23:17 AM org.apache.coyote.AbstractProtocol start
 INFO: Starting ProtocolHandler [&quot;http-nio-8081&quot;]
 Command line: -target 1 -t -P /home/zl/Documents/causaltest/rest/target/test-classes/workload_rest -p url.prefix=http://127.0.0.1:8081/webService/rest/resource/ -p url.trace.read=/home/zl/Documents/causaltest/rest/target/test-classes/error_trace.txt -p url.trace.insert=/home/zl/Documents/causaltest/rest/target/test-classes/error_trace.txt -p url.trace.update=/home/zl/Documents/causaltest/rest/target/test-classes/error_trace.txt -p url.trace.delete=/home/zl/Documents/causaltest/rest/target/test-classes/error_trace.txt -p exportfile=/home/zl/Documents/causaltest/rest/target/test-classes/results.txt -p readproportion=0.0 -p updateproportion=0.0 -p deleteproportion=1.0 -p insertproportion=0.0
 YCSB Client 0.16.0-SNAPSHOT
@@ -188,7 +188,7 @@ Exception in thread &quot;Thread-20&quot; org.junit.contrib.java.lang.system.int
 	at java.lang.Thread.run(Thread.java:748)
 </system-err>
   </testcase>
-  <testcase classname="com.yahoo.ycsb.webservice.rest.IntegrationTest" name="testDeleteOpsBenchmarkSuccess" time="0.623">
+  <testcase classname="com.yahoo.ycsb.webservice.rest.IntegrationTest" name="testDeleteOpsBenchmarkSuccess" time="0.64">
     <failure message="expected:&lt;true&gt; but was:&lt;false&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;false&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -301,7 +301,7 @@ Exception in thread &quot;Thread-22&quot; org.junit.contrib.java.lang.system.int
 	at java.lang.Thread.run(Thread.java:748)
 </system-err>
   </testcase>
-  <testcase classname="com.yahoo.ycsb.webservice.rest.IntegrationTest" name="testInsertOpsBenchmarkFailure" time="0.067">
+  <testcase classname="com.yahoo.ycsb.webservice.rest.IntegrationTest" name="testInsertOpsBenchmarkFailure" time="0.414">
     <failure message="expected:&lt;true&gt; but was:&lt;false&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;false&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -414,7 +414,7 @@ Exception in thread &quot;Thread-24&quot; org.junit.contrib.java.lang.system.int
 	at java.lang.Thread.run(Thread.java:748)
 </system-err>
   </testcase>
-  <testcase classname="com.yahoo.ycsb.webservice.rest.IntegrationTest" name="testInsertOpsBenchmarkSuccess" time="0.442">
+  <testcase classname="com.yahoo.ycsb.webservice.rest.IntegrationTest" name="testInsertOpsBenchmarkSuccess" time="0.088">
     <failure message="expected:&lt;true&gt; but was:&lt;false&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;false&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -527,7 +527,7 @@ Exception in thread &quot;Thread-26&quot; org.junit.contrib.java.lang.system.int
 	at java.lang.Thread.run(Thread.java:748)
 </system-err>
   </testcase>
-  <testcase classname="com.yahoo.ycsb.webservice.rest.IntegrationTest" name="testReadOpsBenchmarkFailure" time="0.343">
+  <testcase classname="com.yahoo.ycsb.webservice.rest.IntegrationTest" name="testReadOpsBenchmarkFailure" time="0.367">
     <failure message="expected:&lt;true&gt; but was:&lt;false&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;false&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -640,7 +640,7 @@ Exception in thread &quot;Thread-28&quot; org.junit.contrib.java.lang.system.int
 	at java.lang.Thread.run(Thread.java:748)
 </system-err>
   </testcase>
-  <testcase classname="com.yahoo.ycsb.webservice.rest.IntegrationTest" name="testReadOpsBenchmarkSuccess" time="0.48">
+  <testcase classname="com.yahoo.ycsb.webservice.rest.IntegrationTest" name="testReadOpsBenchmarkSuccess" time="0.215">
     <failure message="expected:&lt;true&gt; but was:&lt;false&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;false&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -753,7 +753,7 @@ Exception in thread &quot;Thread-30&quot; org.junit.contrib.java.lang.system.int
 	at java.lang.Thread.run(Thread.java:748)
 </system-err>
   </testcase>
-  <testcase classname="com.yahoo.ycsb.webservice.rest.IntegrationTest" name="testUpdateOpsBenchmarkFailure" time="0.856">
+  <testcase classname="com.yahoo.ycsb.webservice.rest.IntegrationTest" name="testUpdateOpsBenchmarkFailure" time="0.187">
     <failure message="expected:&lt;true&gt; but was:&lt;false&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;false&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -866,7 +866,7 @@ Exception in thread &quot;Thread-32&quot; org.junit.contrib.java.lang.system.int
 	at java.lang.Thread.run(Thread.java:748)
 </system-err>
   </testcase>
-  <testcase classname="com.yahoo.ycsb.webservice.rest.IntegrationTest" name="testUpdateOpsBenchmarkSuccess" time="0.429">
+  <testcase classname="com.yahoo.ycsb.webservice.rest.IntegrationTest" name="testUpdateOpsBenchmarkSuccess" time="0.949">
     <failure message="expected:&lt;true&gt; but was:&lt;false&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;false&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)

@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.yahoo.ycsb.webservice.rest.RestClientTest
 -------------------------------------------------------------------------------
-Tests run: 17, Failures: 12, Errors: 0, Skipped: 0, Time elapsed: 4.624 sec <<< FAILURE!
-read_200(com.yahoo.ycsb.webservice.rest.RestClientTest)  Time elapsed: 0.32 sec  <<< FAILURE!
+Tests run: 17, Failures: 12, Errors: 0, Skipped: 0, Time elapsed: 4.187 sec <<< FAILURE!
+read_200(com.yahoo.ycsb.webservice.rest.RestClientTest)  Time elapsed: 0.363 sec  <<< FAILURE!
 java.lang.AssertionError: expected:<Status [name=OK, description=The operation completed successfully.]> but was:<Status [name=NOT_FOUND, description=The requested record was not found.]>
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -41,7 +41,7 @@ java.lang.AssertionError: expected:<Status [name=OK, description=The operation c
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-read_403(com.yahoo.ycsb.webservice.rest.RestClientTest)  Time elapsed: 0.081 sec  <<< FAILURE!
+read_403(com.yahoo.ycsb.webservice.rest.RestClientTest)  Time elapsed: 0.028 sec  <<< FAILURE!
 java.lang.AssertionError: expected:<Status [name=FORBIDDEN, description=The operation is forbidden.]> but was:<Status [name=NOT_FOUND, description=The requested record was not found.]>
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -80,7 +80,7 @@ java.lang.AssertionError: expected:<Status [name=FORBIDDEN, description=The oper
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-read_500(com.yahoo.ycsb.webservice.rest.RestClientTest)  Time elapsed: 0.025 sec  <<< FAILURE!
+read_500(com.yahoo.ycsb.webservice.rest.RestClientTest)  Time elapsed: 0.005 sec  <<< FAILURE!
 java.lang.AssertionError: expected:<Status [name=ERROR, description=The operation failed.]> but was:<Status [name=NOT_FOUND, description=The requested record was not found.]>
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -119,7 +119,7 @@ java.lang.AssertionError: expected:<Status [name=ERROR, description=The operatio
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-update_200(com.yahoo.ycsb.webservice.rest.RestClientTest)  Time elapsed: 0.01 sec  <<< FAILURE!
+update_200(com.yahoo.ycsb.webservice.rest.RestClientTest)  Time elapsed: 0.007 sec  <<< FAILURE!
 java.lang.AssertionError: expected:<Status [name=OK, description=The operation completed successfully.]> but was:<Status [name=NOT_FOUND, description=The requested record was not found.]>
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -158,7 +158,7 @@ java.lang.AssertionError: expected:<Status [name=OK, description=The operation c
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-update_403(com.yahoo.ycsb.webservice.rest.RestClientTest)  Time elapsed: 0.003 sec  <<< FAILURE!
+update_403(com.yahoo.ycsb.webservice.rest.RestClientTest)  Time elapsed: 0.005 sec  <<< FAILURE!
 java.lang.AssertionError: expected:<Status [name=FORBIDDEN, description=The operation is forbidden.]> but was:<Status [name=NOT_FOUND, description=The requested record was not found.]>
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -197,7 +197,7 @@ java.lang.AssertionError: expected:<Status [name=FORBIDDEN, description=The oper
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-update_500(com.yahoo.ycsb.webservice.rest.RestClientTest)  Time elapsed: 0.003 sec  <<< FAILURE!
+update_500(com.yahoo.ycsb.webservice.rest.RestClientTest)  Time elapsed: 0.004 sec  <<< FAILURE!
 java.lang.AssertionError: expected:<Status [name=ERROR, description=The operation failed.]> but was:<Status [name=NOT_FOUND, description=The requested record was not found.]>
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -236,7 +236,7 @@ java.lang.AssertionError: expected:<Status [name=ERROR, description=The operatio
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-insert_200(com.yahoo.ycsb.webservice.rest.RestClientTest)  Time elapsed: 0.028 sec  <<< FAILURE!
+insert_200(com.yahoo.ycsb.webservice.rest.RestClientTest)  Time elapsed: 0.031 sec  <<< FAILURE!
 java.lang.AssertionError: expected:<Status [name=OK, description=The operation completed successfully.]> but was:<Status [name=NOT_FOUND, description=The requested record was not found.]>
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -275,7 +275,7 @@ java.lang.AssertionError: expected:<Status [name=OK, description=The operation c
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-insert_403(com.yahoo.ycsb.webservice.rest.RestClientTest)  Time elapsed: 0.008 sec  <<< FAILURE!
+insert_403(com.yahoo.ycsb.webservice.rest.RestClientTest)  Time elapsed: 0.003 sec  <<< FAILURE!
 java.lang.AssertionError: expected:<Status [name=FORBIDDEN, description=The operation is forbidden.]> but was:<Status [name=NOT_FOUND, description=The requested record was not found.]>
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -314,7 +314,7 @@ java.lang.AssertionError: expected:<Status [name=FORBIDDEN, description=The oper
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-insert_500(com.yahoo.ycsb.webservice.rest.RestClientTest)  Time elapsed: 0.015 sec  <<< FAILURE!
+insert_500(com.yahoo.ycsb.webservice.rest.RestClientTest)  Time elapsed: 0.003 sec  <<< FAILURE!
 java.lang.AssertionError: expected:<Status [name=ERROR, description=The operation failed.]> but was:<Status [name=NOT_FOUND, description=The requested record was not found.]>
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -353,7 +353,7 @@ java.lang.AssertionError: expected:<Status [name=ERROR, description=The operatio
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-delete_200(com.yahoo.ycsb.webservice.rest.RestClientTest)  Time elapsed: 0.021 sec  <<< FAILURE!
+delete_200(com.yahoo.ycsb.webservice.rest.RestClientTest)  Time elapsed: 0.003 sec  <<< FAILURE!
 java.lang.AssertionError: expected:<Status [name=OK, description=The operation completed successfully.]> but was:<Status [name=NOT_FOUND, description=The requested record was not found.]>
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -392,7 +392,7 @@ java.lang.AssertionError: expected:<Status [name=OK, description=The operation c
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-delete_403(com.yahoo.ycsb.webservice.rest.RestClientTest)  Time elapsed: 0.002 sec  <<< FAILURE!
+delete_403(com.yahoo.ycsb.webservice.rest.RestClientTest)  Time elapsed: 0.006 sec  <<< FAILURE!
 java.lang.AssertionError: expected:<Status [name=FORBIDDEN, description=The operation is forbidden.]> but was:<Status [name=NOT_FOUND, description=The requested record was not found.]>
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -431,7 +431,7 @@ java.lang.AssertionError: expected:<Status [name=FORBIDDEN, description=The oper
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-delete_500(com.yahoo.ycsb.webservice.rest.RestClientTest)  Time elapsed: 0.022 sec  <<< FAILURE!
+delete_500(com.yahoo.ycsb.webservice.rest.RestClientTest)  Time elapsed: 0.01 sec  <<< FAILURE!
 java.lang.AssertionError: expected:<Status [name=ERROR, description=The operation failed.]> but was:<Status [name=NOT_FOUND, description=The requested record was not found.]>
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)

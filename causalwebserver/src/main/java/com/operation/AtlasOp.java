@@ -39,6 +39,8 @@ public class AtlasOp implements Operation
     private static String database = "sample_supplies";
     private static String port = "mongodb_port";
 
+    //publickey = ngfuizbm
+    //privatekey = dc01c794-cd52-4d55-9c5c-da179ea58bc3
     @Override
     public String init() throws IOException
     {
