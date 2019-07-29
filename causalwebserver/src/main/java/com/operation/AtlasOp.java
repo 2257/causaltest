@@ -20,7 +20,7 @@ import java.util.Set;
 import static com.mongodb.client.model.Filters.eq;
 import static com.mongodb.client.model.Updates.set;
 
-public class MongodbOp implements Operation
+public class AtlasOp implements Operation
 {
     private static MongoClient mongoClient;
     private static MongoClient mongoClient2;
@@ -37,17 +37,17 @@ public class MongodbOp implements Operation
     private static String privateIP2 = "privateIP2";
     private static String privateIP3 = "privateIP3";
     private static String database = "sample_supplies";
-	private static String port = "mongodb_port";
+    private static String port = "mongodb_port";
 
     @Override
     public String init() throws IOException
     {
-	properties.load(new FileInputStream("src/main/resources/conf.properties"));
+        properties.load(new FileInputStream("src/main/resources/conf.properties"));
         WriteConcern wc = WriteConcern.W1;
         ReadConcern rc = ReadConcern.DEFAULT;
         String x1="";
-		String x2="";
-		if(properties.getProperty(writeConcern).equals("w1"))
+        String x2="";
+        if(properties.getProperty(writeConcern).equals("w1"))
         {
             wc = WriteConcern.W1;
         }else if(properties.getProperty(writeConcern).equals("w2"))
@@ -59,12 +59,12 @@ public class MongodbOp implements Operation
         }else if(properties.getProperty(writeConcern).equals("majority"))
         {
             wc = WriteConcern.MAJORITY;
-			x1="wc=majority";
+            x1="wc=majority";
         }
 
         if(properties.getProperty(readConcern).equals("majority"))
         {
-			x2="rc=majority";
+            x2="rc=majority";
             rc = ReadConcern.MAJORITY;
         }else if(properties.getProperty(readConcern).equals("linearizable"))
         {
@@ -77,7 +77,7 @@ public class MongodbOp implements Operation
 
         try{
             // 连接到 mongodb 服务
-            List<ServerAddress> addresses = new ArrayList<>();
+          /*  List<ServerAddress> addresses = new ArrayList<>();
             ServerAddress address1 = new ServerAddress(properties.getProperty(privateIP1) ,Integer.parseInt(properties.getProperty(port)));
             ServerAddress address2 = new ServerAddress(properties.getProperty(privateIP2) , Integer.parseInt(properties.getProperty(port)));
             ServerAddress address3 = new ServerAddress(properties.getProperty(privateIP3) , Integer.parseInt(properties.getProperty(port)));
@@ -85,22 +85,22 @@ public class MongodbOp implements Operation
             addresses.add(address2);
             addresses.add(address3);
             mongoClient = new MongoClient(addresses);
-            mongoClient2 = new MongoClient(addresses);
+            mongoClient2 = new MongoClient(addresses);*/
 
-           /* MongoClientURI uri = new MongoClientURI(
+            MongoClientURI uri = new MongoClientURI(
                     "mongodb+srv://zhaole:13061076zl.@causaltest-ocqgv.mongodb.net/test?retryWrites=true&w=majority");
             mongoClient = new MongoClient(uri);
-            mongoClient2 = new MongoClient(uri);*/
+            mongoClient2 = new MongoClient(uri);
 
 
 
             db = mongoClient.getDatabase(properties.getProperty(database))
                     .withWriteConcern(wc)
                     .withReadConcern(rc);
-             db2 = mongoClient2.getDatabase(properties.getProperty(database))
-                     .withWriteConcern(wc)
-                     .withReadConcern(rc);
-             //db.createCollection("xxxtable");
+            db2 = mongoClient2.getDatabase(properties.getProperty(database))
+                    .withWriteConcern(wc)
+                    .withReadConcern(rc);
+            //db.createCollection("xxxtable");
 
             System.out.println("Connect to database successfully"+db.getName());
 
@@ -174,8 +174,8 @@ public class MongodbOp implements Operation
     @Override
     public  String read(String tableName, String id,Set<String> fields, int clientFlag)throws IOException
     {
-properties.load(new FileInputStream("src/main/resources/conf.properties"));
-      ReadPreference rp = ReadPreference.nearest();
+        properties.load(new FileInputStream("src/main/resources/conf.properties"));
+        ReadPreference rp = ReadPreference.nearest();
         if(properties.getProperty(readPreference).equals("nearest"))
         {
             rp = ReadPreference.nearest();
@@ -183,10 +183,10 @@ properties.load(new FileInputStream("src/main/resources/conf.properties"));
         {
             rp = ReadPreference.primary();
         }
-    ///        else if(properties.getProperty(readPreference) == "primarypreferred")
-    //        {
-    //            rp = ReadPreference.primaryPreferred();
-    //        }
+        ///        else if(properties.getProperty(readPreference) == "primarypreferred")
+        //        {
+        //            rp = ReadPreference.primaryPreferred();
+        //        }
         else if(properties.getProperty(readPreference).equals("secondary"))
         {
             rp = ReadPreference.secondary();
@@ -258,20 +258,20 @@ properties.load(new FileInputStream("src/main/resources/conf.properties"));
         String r ="";
         MongoCollection<Document> collection;
         if(clientFlag == 1){
-          collection = db.getCollection(tableName);
+            collection = db.getCollection(tableName);
         }
         else{
-          collection = db2.getCollection(tableName);
+            collection = db2.getCollection(tableName);
         }
         if(tableName.equals("twitterusertable"))
         {
             Document _twitterusertable = new Document("_id",id)
-                .append("tweetid","tweetid_default")
-                .append("liketweet","liketweet_default")
-                .append("retweet","retweet_default")
-                .append("commenttweet","commenttweet_default")
-                .append("time","time_default");
-              collection.insertOne(_twitterusertable);
+                    .append("tweetid","tweetid_default")
+                    .append("liketweet","liketweet_default")
+                    .append("retweet","retweet_default")
+                    .append("commenttweet","commenttweet_default")
+                    .append("time","time_default");
+            collection.insertOne(_twitterusertable);
             //  System.out.println("^^^^^^^^^^");
         }
         if(tableName.equals("amazoncommenttable"))
@@ -282,7 +282,7 @@ properties.load(new FileInputStream("src/main/resources/conf.properties"));
                     .append("ifuseful","ifuserful_default")
                     .append("belongsto","belongsto_default")
                     .append("time","time_default");
-              collection.insertOne(_amazoncommenttable);
+            collection.insertOne(_amazoncommenttable);
         }
         if(tableName.equals("amazoncommoditytable"))
         {
@@ -292,7 +292,7 @@ properties.load(new FileInputStream("src/main/resources/conf.properties"));
                     .append("comment","comment_default")
                     .append("question","question_default")
                     .append("time","time_default");
-              collection.insertOne(_amazoncommoditytable);
+            collection.insertOne(_amazoncommoditytable);
         }
         if(tableName.equals("amazoncarttable"))
         {
