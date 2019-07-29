@@ -76,7 +76,7 @@ public class TestCoreWorkload {
   {
    List<String> list = new ArrayList<>();
     try {
-       Class instance = Class.forName("com.yahoo.ycsb.workloads.dbinstance.MongodbTwitterMR");//Class.forName("CassandraTwitterRYW");
+       Class instance = Class.forName("com.yahoo.ycsb.workloads.dbinstance.Mongodb.MongodbTwitterMR");//Class.forName("CassandraTwitterRYW");
       Object obj = instance.newInstance();
       Method[] methods = instance.getMethods();
       System.out.println("getMethods获取的方法：");

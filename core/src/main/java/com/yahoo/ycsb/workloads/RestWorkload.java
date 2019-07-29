@@ -32,7 +32,6 @@ import java.util.Properties;
 import java.util.*;
 import java.text.SimpleDateFormat;
 import com.yahoo.ycsb.generator.UniformLongGenerator;
-import com.yahoo.ycsb.workloads.dbinstance.CassandraTwitterRYW;
 
 /**
  * Typical RESTFul services benchmarking scenario. Represents a set of client
