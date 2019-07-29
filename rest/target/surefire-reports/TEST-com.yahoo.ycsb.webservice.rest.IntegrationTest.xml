@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="8" failures="8" name="com.yahoo.ycsb.webservice.rest.IntegrationTest" time="3.797" errors="0" skipped="0">
+<testsuite tests="8" failures="8" name="com.yahoo.ycsb.webservice.rest.IntegrationTest" time="3.728" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="sun.boot.library.path" value="/home/zhaole/jdk1.8.0_181/jre/lib/amd64"/>
-    <property name="java.vm.version" value="25.181-b13"/>
+    <property name="sun.boot.library.path" value="/home/zl/Documents/jdk1.8.0_211/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.211-b12"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="/home/zhaole/causaltest"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/zl/Documents/causaltest"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -15,53 +15,53 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/home/zhaole/causaltest"/>
-    <property name="java.runtime.version" value="1.8.0_181-b13"/>
+    <property name="user.dir" value="/home/zl/Documents/causaltest"/>
+    <property name="java.runtime.version" value="1.8.0_211-b12"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
-    <property name="java.endorsed.dirs" value="/home/zhaole/jdk1.8.0_181/jre/lib/endorsed"/>
+    <property name="java.endorsed.dirs" value="/home/zl/Documents/jdk1.8.0_211/jre/lib/endorsed"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.io.tmpdir" value="/tmp"/>
     <property name="line.separator" value="
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Linux"/>
-    <property name="classworlds.conf" value="/home/zhaole/apache-maven-3.5.4/bin/m2.conf"/>
+    <property name="classworlds.conf" value="/home/zl/Documents/idea-IU-191.7479.19/plugins/maven/lib/maven3/bin/m2.conf"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.library.path" value="/data/zhaole/pgxl/lib:/home/zhaole/opensslprefix/lib:/data/zhaole/pgxl/lib:/home/zhaole/opensslprefix/lib::/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
-    <property name="maven.conf" value="/home/zhaole/apache-maven-3.5.4/conf"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="3.10.0-693.2.2.el7.x86_64"/>
-    <property name="library.jansi.path" value="/home/zhaole/apache-maven-3.5.4/lib/jansi-native"/>
-    <property name="user.home" value="/home/zhaole"/>
-    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="os.version" value="3.10.0-514.el7.x86_64"/>
+    <property name="user.home" value="/home/zl"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
     <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
-    <property name="java.specification.version" value="1.8"/>
     <property name="file.encoding" value="UTF-8"/>
-    <property name="user.name" value="zhaole"/>
-    <property name="java.class.path" value="/home/zhaole/apache-maven-3.5.4/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="user.name" value="zl"/>
+    <property name="java.class.path" value="/home/zl/Documents/idea-IU-191.7479.19/plugins/maven/lib/maven3/boot/plexus-classworlds-2.5.2.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="java.home" value="/home/zhaole/jdk1.8.0_181/jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher package"/>
+    <property name="java.home" value="/home/zl/Documents/jdk1.8.0_211/jre"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version2019.1.3 clean install"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="idea.version2019.1.3" value="true"/>
     <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.version" value="1.8.0_181"/>
-    <property name="java.ext.dirs" value="/home/zhaole/jdk1.8.0_181/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="java.version" value="1.8.0_211"/>
+    <property name="java.ext.dirs" value="/home/zl/Documents/jdk1.8.0_211/jre/lib/ext:/usr/java/packages/lib/ext"/>
     <property name="securerandom.source" value="file:/dev/./urandom"/>
-    <property name="sun.boot.class.path" value="/home/zhaole/jdk1.8.0_181/jre/lib/resources.jar:/home/zhaole/jdk1.8.0_181/jre/lib/rt.jar:/home/zhaole/jdk1.8.0_181/jre/lib/sunrsasign.jar:/home/zhaole/jdk1.8.0_181/jre/lib/jsse.jar:/home/zhaole/jdk1.8.0_181/jre/lib/jce.jar:/home/zhaole/jdk1.8.0_181/jre/lib/charsets.jar:/home/zhaole/jdk1.8.0_181/jre/lib/jfr.jar:/home/zhaole/jdk1.8.0_181/jre/classes"/>
+    <property name="sun.boot.class.path" value="/home/zl/Documents/jdk1.8.0_211/jre/lib/resources.jar:/home/zl/Documents/jdk1.8.0_211/jre/lib/rt.jar:/home/zl/Documents/jdk1.8.0_211/jre/lib/sunrsasign.jar:/home/zl/Documents/jdk1.8.0_211/jre/lib/jsse.jar:/home/zl/Documents/jdk1.8.0_211/jre/lib/jce.jar:/home/zl/Documents/jdk1.8.0_211/jre/lib/charsets.jar:/home/zl/Documents/jdk1.8.0_211/jre/lib/jfr.jar:/home/zl/Documents/jdk1.8.0_211/jre/classes"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="/home/zhaole/apache-maven-3.5.4"/>
+    <property name="maven.home" value="/home/zl/Documents/idea-IU-191.7479.19/plugins/maven/lib/maven3"/>
     <property name="file.separator" value="/"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.yahoo.ycsb.webservice.rest.IntegrationTest" name="testDeleteOpsBenchmarkFailure" time="0.31">
+  <testcase classname="com.yahoo.ycsb.webservice.rest.IntegrationTest" name="testDeleteOpsBenchmarkFailure" time="0.488">
     <failure message="expected:&lt;true&gt; but was:&lt;false&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;false&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -97,44 +97,90 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
-    <system-out>java.lang.ArrayIndexOutOfBoundsException: -1
+    <system-out>databasename=null
+java.lang.ArrayIndexOutOfBoundsException: -1
 	at java.util.ArrayList.elementData(ArrayList.java:422)
 	at java.util.ArrayList.get(ArrayList.java:435)
-	at com.yahoo.ycsb.workloads.RestWorkload.getNextURL(RestWorkload.java:860)
-	at com.yahoo.ycsb.workloads.RestWorkload.doTransactionDelete(RestWorkload.java:917)
-	at com.yahoo.ycsb.workloads.RestWorkload.doTransaction(RestWorkload.java:762)
+	at com.yahoo.ycsb.workloads.RestWorkload.getNextURL(RestWorkload.java:907)
+	at com.yahoo.ycsb.workloads.RestWorkload.doTransactionDelete(RestWorkload.java:975)
+	at com.yahoo.ycsb.workloads.RestWorkload.doTransaction(RestWorkload.java:805)
 	at com.yahoo.ycsb.ClientThread.run(Client.java:455)
 	at java.lang.Thread.run(Thread.java:748)
 </system-out>
-    <system-err>Dec 10, 2018 2:00:42 PM org.apache.coyote.AbstractProtocol init
-INFO: Initializing ProtocolHandler [&quot;http-nio-8080&quot;]
-Dec 10, 2018 2:00:42 PM org.apache.tomcat.util.net.NioSelectorPool getSharedSelector
+    <system-err>Jul 28, 2019 11:49:19 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler [&quot;http-nio-8081&quot;]
+Jul 28, 2019 11:49:19 PM org.apache.tomcat.util.net.NioSelectorPool getSharedSelector
 INFO: Using a shared selector for servlet write/read
-Dec 10, 2018 2:00:42 PM org.apache.catalina.core.StandardService startInternal
+Jul 28, 2019 11:49:19 PM org.apache.catalina.core.StandardService startInternal
 INFO: Starting service Tomcat
-Dec 10, 2018 2:00:42 PM org.apache.catalina.core.StandardEngine startInternal
+Jul 28, 2019 11:49:19 PM org.apache.catalina.core.StandardEngine startInternal
 INFO: Starting Servlet Engine: Apache Tomcat/8.0.28
-Dec 10, 2018 2:00:42 PM org.apache.catalina.startup.ContextConfig getDefaultWebXmlFragment
+Jul 28, 2019 11:49:19 PM org.apache.catalina.startup.ContextConfig getDefaultWebXmlFragment
 INFO: No global web.xml found
-Dec 10, 2018 2:00:42 PM org.apache.jasper.servlet.TldScanner scanJars
+Jul 28, 2019 11:49:19 PM org.apache.jasper.servlet.TldScanner scanJars
 INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-Dec 10, 2018 2:00:42 PM org.apache.coyote.AbstractProtocol start
-INFO: Starting ProtocolHandler [&quot;http-nio-8080&quot;]
-Command line: -target 1 -t -P /home/zhaole/causaltest/rest/target/test-classes/workload_rest -p url.prefix=http://127.0.0.1:8080/webService/rest/resource/ -p url.trace.read=/home/zhaole/causaltest/rest/target/test-classes/error_trace.txt -p url.trace.insert=/home/zhaole/causaltest/rest/target/test-classes/error_trace.txt -p url.trace.update=/home/zhaole/causaltest/rest/target/test-classes/error_trace.txt -p url.trace.delete=/home/zhaole/causaltest/rest/target/test-classes/error_trace.txt -p exportfile=/home/zhaole/causaltest/rest/target/test-classes/results.txt -p readproportion=0.0 -p updateproportion=0.0 -p deleteproportion=1.0 -p insertproportion=0.0
+Jul 28, 2019 11:49:19 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler [&quot;http-nio-8081&quot;]
+Command line: -target 1 -t -P /home/zl/Documents/causaltest/rest/target/test-classes/workload_rest -p url.prefix=http://127.0.0.1:8081/webService/rest/resource/ -p url.trace.read=/home/zl/Documents/causaltest/rest/target/test-classes/error_trace.txt -p url.trace.insert=/home/zl/Documents/causaltest/rest/target/test-classes/error_trace.txt -p url.trace.update=/home/zl/Documents/causaltest/rest/target/test-classes/error_trace.txt -p url.trace.delete=/home/zl/Documents/causaltest/rest/target/test-classes/error_trace.txt -p exportfile=/home/zl/Documents/causaltest/rest/target/test-classes/results.txt -p readproportion=0.0 -p updateproportion=0.0 -p deleteproportion=1.0 -p insertproportion=0.0
 YCSB Client 0.16.0-SNAPSHOT
 
 Loading workload...
+java.lang.ClassNotFoundException: com.yahoo.ycsb.workloads.dbinstance.cassandratwitterreadyouwrite
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.yahoo.ycsb.workloads.RestWorkload.init(RestWorkload.java:191)
+	at com.yahoo.ycsb.Client.initWorkload(Client.java:911)
+	at com.yahoo.ycsb.Client.main(Client.java:754)
+	at com.yahoo.ycsb.webservice.rest.IntegrationTest.testDeleteOpsBenchmarkFailure(IntegrationTest.java:209)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.contrib.java.lang.system.ExpectedSystemExit$1.evaluate(ExpectedSystemExit.java:130)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 Starting test.
 DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
 java.lang.ArrayIndexOutOfBoundsException: -1
 	at java.util.ArrayList.elementData(ArrayList.java:422)
 	at java.util.ArrayList.get(ArrayList.java:435)
-	at com.yahoo.ycsb.workloads.RestWorkload.getNextURL(RestWorkload.java:860)
-	at com.yahoo.ycsb.workloads.RestWorkload.doTransactionDelete(RestWorkload.java:917)
-	at com.yahoo.ycsb.workloads.RestWorkload.doTransaction(RestWorkload.java:762)
+	at com.yahoo.ycsb.workloads.RestWorkload.getNextURL(RestWorkload.java:907)
+	at com.yahoo.ycsb.workloads.RestWorkload.doTransactionDelete(RestWorkload.java:975)
+	at com.yahoo.ycsb.workloads.RestWorkload.doTransaction(RestWorkload.java:805)
 	at com.yahoo.ycsb.ClientThread.run(Client.java:455)
 	at java.lang.Thread.run(Thread.java:748)
-Exception in thread &quot;Thread-3&quot; org.junit.contrib.java.lang.system.internal.CheckExitCalled: Tried to exit with status 0.
+Exception in thread &quot;Thread-20&quot; org.junit.contrib.java.lang.system.internal.CheckExitCalled: Tried to exit with status 0.
 	at org.junit.contrib.java.lang.system.internal.NoExitSecurityManager.checkExit(NoExitSecurityManager.java:24)
 	at java.lang.Runtime.exit(Runtime.java:107)
 	at java.lang.System.exit(System.java:971)
@@ -142,7 +188,7 @@ Exception in thread &quot;Thread-3&quot; org.junit.contrib.java.lang.system.inte
 	at java.lang.Thread.run(Thread.java:748)
 </system-err>
   </testcase>
-  <testcase classname="com.yahoo.ycsb.webservice.rest.IntegrationTest" name="testDeleteOpsBenchmarkSuccess" time="0.13">
+  <testcase classname="com.yahoo.ycsb.webservice.rest.IntegrationTest" name="testDeleteOpsBenchmarkSuccess" time="0.623">
     <failure message="expected:&lt;true&gt; but was:&lt;false&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;false&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -178,30 +224,76 @@ Exception in thread &quot;Thread-3&quot; org.junit.contrib.java.lang.system.inte
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
-    <system-out>java.lang.ArrayIndexOutOfBoundsException: -1
+    <system-out>databasename=null
+java.lang.ArrayIndexOutOfBoundsException: -1
 	at java.util.ArrayList.elementData(ArrayList.java:422)
 	at java.util.ArrayList.get(ArrayList.java:435)
-	at com.yahoo.ycsb.workloads.RestWorkload.getNextURL(RestWorkload.java:860)
-	at com.yahoo.ycsb.workloads.RestWorkload.doTransactionDelete(RestWorkload.java:917)
-	at com.yahoo.ycsb.workloads.RestWorkload.doTransaction(RestWorkload.java:762)
+	at com.yahoo.ycsb.workloads.RestWorkload.getNextURL(RestWorkload.java:907)
+	at com.yahoo.ycsb.workloads.RestWorkload.doTransactionDelete(RestWorkload.java:975)
+	at com.yahoo.ycsb.workloads.RestWorkload.doTransaction(RestWorkload.java:805)
 	at com.yahoo.ycsb.ClientThread.run(Client.java:455)
 	at java.lang.Thread.run(Thread.java:748)
 </system-out>
-    <system-err>Command line: -target 1 -t -P /home/zhaole/causaltest/rest/target/test-classes/workload_rest -p url.prefix=http://127.0.0.1:8080/webService/rest/resource/ -p url.trace.read=/home/zhaole/causaltest/rest/target/test-classes/trace.txt -p url.trace.insert=/home/zhaole/causaltest/rest/target/test-classes/trace.txt -p url.trace.update=/home/zhaole/causaltest/rest/target/test-classes/trace.txt -p url.trace.delete=/home/zhaole/causaltest/rest/target/test-classes/trace.txt -p exportfile=/home/zhaole/causaltest/rest/target/test-classes/results.txt -p readproportion=0.0 -p updateproportion=0.0 -p deleteproportion=1.0 -p insertproportion=0.0
+    <system-err>Command line: -target 1 -t -P /home/zl/Documents/causaltest/rest/target/test-classes/workload_rest -p url.prefix=http://127.0.0.1:8081/webService/rest/resource/ -p url.trace.read=/home/zl/Documents/causaltest/rest/target/test-classes/trace.txt -p url.trace.insert=/home/zl/Documents/causaltest/rest/target/test-classes/trace.txt -p url.trace.update=/home/zl/Documents/causaltest/rest/target/test-classes/trace.txt -p url.trace.delete=/home/zl/Documents/causaltest/rest/target/test-classes/trace.txt -p exportfile=/home/zl/Documents/causaltest/rest/target/test-classes/results.txt -p readproportion=0.0 -p updateproportion=0.0 -p deleteproportion=1.0 -p insertproportion=0.0
 YCSB Client 0.16.0-SNAPSHOT
 
 Loading workload...
+java.lang.ClassNotFoundException: com.yahoo.ycsb.workloads.dbinstance.cassandratwitterreadyouwrite
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.yahoo.ycsb.workloads.RestWorkload.init(RestWorkload.java:191)
+	at com.yahoo.ycsb.Client.initWorkload(Client.java:911)
+	at com.yahoo.ycsb.Client.main(Client.java:754)
+	at com.yahoo.ycsb.webservice.rest.IntegrationTest.testDeleteOpsBenchmarkSuccess(IntegrationTest.java:194)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.contrib.java.lang.system.ExpectedSystemExit$1.evaluate(ExpectedSystemExit.java:130)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 Starting test.
 DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
 java.lang.ArrayIndexOutOfBoundsException: -1
 	at java.util.ArrayList.elementData(ArrayList.java:422)
 	at java.util.ArrayList.get(ArrayList.java:435)
-	at com.yahoo.ycsb.workloads.RestWorkload.getNextURL(RestWorkload.java:860)
-	at com.yahoo.ycsb.workloads.RestWorkload.doTransactionDelete(RestWorkload.java:917)
-	at com.yahoo.ycsb.workloads.RestWorkload.doTransaction(RestWorkload.java:762)
+	at com.yahoo.ycsb.workloads.RestWorkload.getNextURL(RestWorkload.java:907)
+	at com.yahoo.ycsb.workloads.RestWorkload.doTransactionDelete(RestWorkload.java:975)
+	at com.yahoo.ycsb.workloads.RestWorkload.doTransaction(RestWorkload.java:805)
 	at com.yahoo.ycsb.ClientThread.run(Client.java:455)
 	at java.lang.Thread.run(Thread.java:748)
-Exception in thread &quot;Thread-5&quot; org.junit.contrib.java.lang.system.internal.CheckExitCalled: Tried to exit with status 0.
+Exception in thread &quot;Thread-22&quot; org.junit.contrib.java.lang.system.internal.CheckExitCalled: Tried to exit with status 0.
 	at org.junit.contrib.java.lang.system.internal.NoExitSecurityManager.checkExit(NoExitSecurityManager.java:24)
 	at java.lang.Runtime.exit(Runtime.java:107)
 	at java.lang.System.exit(System.java:971)
@@ -209,7 +301,7 @@ Exception in thread &quot;Thread-5&quot; org.junit.contrib.java.lang.system.inte
 	at java.lang.Thread.run(Thread.java:748)
 </system-err>
   </testcase>
-  <testcase classname="com.yahoo.ycsb.webservice.rest.IntegrationTest" name="testInsertOpsBenchmarkFailure" time="0.566">
+  <testcase classname="com.yahoo.ycsb.webservice.rest.IntegrationTest" name="testInsertOpsBenchmarkFailure" time="0.067">
     <failure message="expected:&lt;true&gt; but was:&lt;false&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;false&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -245,30 +337,76 @@ Exception in thread &quot;Thread-5&quot; org.junit.contrib.java.lang.system.inte
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
-    <system-out>java.lang.ArrayIndexOutOfBoundsException: -1
+    <system-out>databasename=null
+java.lang.ArrayIndexOutOfBoundsException: -1
 	at java.util.ArrayList.elementData(ArrayList.java:422)
 	at java.util.ArrayList.get(ArrayList.java:435)
-	at com.yahoo.ycsb.workloads.RestWorkload.getNextURL(RestWorkload.java:860)
-	at com.yahoo.ycsb.workloads.RestWorkload.doTransactionInsert(RestWorkload.java:913)
-	at com.yahoo.ycsb.workloads.RestWorkload.doTransaction(RestWorkload.java:759)
+	at com.yahoo.ycsb.workloads.RestWorkload.getNextURL(RestWorkload.java:907)
+	at com.yahoo.ycsb.workloads.RestWorkload.doTransactionInsert(RestWorkload.java:971)
+	at com.yahoo.ycsb.workloads.RestWorkload.doTransaction(RestWorkload.java:802)
 	at com.yahoo.ycsb.ClientThread.run(Client.java:455)
 	at java.lang.Thread.run(Thread.java:748)
 </system-out>
-    <system-err>Command line: -target 1 -t -P /home/zhaole/causaltest/rest/target/test-classes/workload_rest -p url.prefix=http://127.0.0.1:8080/webService/rest/resource/ -p url.trace.read=/home/zhaole/causaltest/rest/target/test-classes/error_trace.txt -p url.trace.insert=/home/zhaole/causaltest/rest/target/test-classes/error_trace.txt -p url.trace.update=/home/zhaole/causaltest/rest/target/test-classes/error_trace.txt -p url.trace.delete=/home/zhaole/causaltest/rest/target/test-classes/error_trace.txt -p exportfile=/home/zhaole/causaltest/rest/target/test-classes/results.txt -p readproportion=0.0 -p updateproportion=0.0 -p deleteproportion=0.0 -p insertproportion=1.0
+    <system-err>Command line: -target 1 -t -P /home/zl/Documents/causaltest/rest/target/test-classes/workload_rest -p url.prefix=http://127.0.0.1:8081/webService/rest/resource/ -p url.trace.read=/home/zl/Documents/causaltest/rest/target/test-classes/error_trace.txt -p url.trace.insert=/home/zl/Documents/causaltest/rest/target/test-classes/error_trace.txt -p url.trace.update=/home/zl/Documents/causaltest/rest/target/test-classes/error_trace.txt -p url.trace.delete=/home/zl/Documents/causaltest/rest/target/test-classes/error_trace.txt -p exportfile=/home/zl/Documents/causaltest/rest/target/test-classes/results.txt -p readproportion=0.0 -p updateproportion=0.0 -p deleteproportion=0.0 -p insertproportion=1.0
 YCSB Client 0.16.0-SNAPSHOT
 
 Loading workload...
+java.lang.ClassNotFoundException: com.yahoo.ycsb.workloads.dbinstance.cassandratwitterreadyouwrite
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.yahoo.ycsb.workloads.RestWorkload.init(RestWorkload.java:191)
+	at com.yahoo.ycsb.Client.initWorkload(Client.java:911)
+	at com.yahoo.ycsb.Client.main(Client.java:754)
+	at com.yahoo.ycsb.webservice.rest.IntegrationTest.testInsertOpsBenchmarkFailure(IntegrationTest.java:149)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.contrib.java.lang.system.ExpectedSystemExit$1.evaluate(ExpectedSystemExit.java:130)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 Starting test.
 DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
 java.lang.ArrayIndexOutOfBoundsException: -1
 	at java.util.ArrayList.elementData(ArrayList.java:422)
 	at java.util.ArrayList.get(ArrayList.java:435)
-	at com.yahoo.ycsb.workloads.RestWorkload.getNextURL(RestWorkload.java:860)
-	at com.yahoo.ycsb.workloads.RestWorkload.doTransactionInsert(RestWorkload.java:913)
-	at com.yahoo.ycsb.workloads.RestWorkload.doTransaction(RestWorkload.java:759)
+	at com.yahoo.ycsb.workloads.RestWorkload.getNextURL(RestWorkload.java:907)
+	at com.yahoo.ycsb.workloads.RestWorkload.doTransactionInsert(RestWorkload.java:971)
+	at com.yahoo.ycsb.workloads.RestWorkload.doTransaction(RestWorkload.java:802)
 	at com.yahoo.ycsb.ClientThread.run(Client.java:455)
 	at java.lang.Thread.run(Thread.java:748)
-Exception in thread &quot;Thread-7&quot; org.junit.contrib.java.lang.system.internal.CheckExitCalled: Tried to exit with status 0.
+Exception in thread &quot;Thread-24&quot; org.junit.contrib.java.lang.system.internal.CheckExitCalled: Tried to exit with status 0.
 	at org.junit.contrib.java.lang.system.internal.NoExitSecurityManager.checkExit(NoExitSecurityManager.java:24)
 	at java.lang.Runtime.exit(Runtime.java:107)
 	at java.lang.System.exit(System.java:971)
@@ -276,7 +414,7 @@ Exception in thread &quot;Thread-7&quot; org.junit.contrib.java.lang.system.inte
 	at java.lang.Thread.run(Thread.java:748)
 </system-err>
   </testcase>
-  <testcase classname="com.yahoo.ycsb.webservice.rest.IntegrationTest" name="testInsertOpsBenchmarkSuccess" time="0.482">
+  <testcase classname="com.yahoo.ycsb.webservice.rest.IntegrationTest" name="testInsertOpsBenchmarkSuccess" time="0.442">
     <failure message="expected:&lt;true&gt; but was:&lt;false&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;false&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -312,30 +450,76 @@ Exception in thread &quot;Thread-7&quot; org.junit.contrib.java.lang.system.inte
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
-    <system-out>java.lang.ArrayIndexOutOfBoundsException: -1
+    <system-out>databasename=null
+java.lang.ArrayIndexOutOfBoundsException: -1
 	at java.util.ArrayList.elementData(ArrayList.java:422)
 	at java.util.ArrayList.get(ArrayList.java:435)
-	at com.yahoo.ycsb.workloads.RestWorkload.getNextURL(RestWorkload.java:860)
-	at com.yahoo.ycsb.workloads.RestWorkload.doTransactionInsert(RestWorkload.java:913)
-	at com.yahoo.ycsb.workloads.RestWorkload.doTransaction(RestWorkload.java:759)
+	at com.yahoo.ycsb.workloads.RestWorkload.getNextURL(RestWorkload.java:907)
+	at com.yahoo.ycsb.workloads.RestWorkload.doTransactionInsert(RestWorkload.java:971)
+	at com.yahoo.ycsb.workloads.RestWorkload.doTransaction(RestWorkload.java:802)
 	at com.yahoo.ycsb.ClientThread.run(Client.java:455)
 	at java.lang.Thread.run(Thread.java:748)
 </system-out>
-    <system-err>Command line: -target 1 -t -P /home/zhaole/causaltest/rest/target/test-classes/workload_rest -p url.prefix=http://127.0.0.1:8080/webService/rest/resource/ -p url.trace.read=/home/zhaole/causaltest/rest/target/test-classes/trace.txt -p url.trace.insert=/home/zhaole/causaltest/rest/target/test-classes/trace.txt -p url.trace.update=/home/zhaole/causaltest/rest/target/test-classes/trace.txt -p url.trace.delete=/home/zhaole/causaltest/rest/target/test-classes/trace.txt -p exportfile=/home/zhaole/causaltest/rest/target/test-classes/results.txt -p readproportion=0.0 -p updateproportion=0.0 -p deleteproportion=0.0 -p insertproportion=1.0
+    <system-err>Command line: -target 1 -t -P /home/zl/Documents/causaltest/rest/target/test-classes/workload_rest -p url.prefix=http://127.0.0.1:8081/webService/rest/resource/ -p url.trace.read=/home/zl/Documents/causaltest/rest/target/test-classes/trace.txt -p url.trace.insert=/home/zl/Documents/causaltest/rest/target/test-classes/trace.txt -p url.trace.update=/home/zl/Documents/causaltest/rest/target/test-classes/trace.txt -p url.trace.delete=/home/zl/Documents/causaltest/rest/target/test-classes/trace.txt -p exportfile=/home/zl/Documents/causaltest/rest/target/test-classes/results.txt -p readproportion=0.0 -p updateproportion=0.0 -p deleteproportion=0.0 -p insertproportion=1.0
 YCSB Client 0.16.0-SNAPSHOT
 
 Loading workload...
+java.lang.ClassNotFoundException: com.yahoo.ycsb.workloads.dbinstance.cassandratwitterreadyouwrite
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.yahoo.ycsb.workloads.RestWorkload.init(RestWorkload.java:191)
+	at com.yahoo.ycsb.Client.initWorkload(Client.java:911)
+	at com.yahoo.ycsb.Client.main(Client.java:754)
+	at com.yahoo.ycsb.webservice.rest.IntegrationTest.testInsertOpsBenchmarkSuccess(IntegrationTest.java:134)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.contrib.java.lang.system.ExpectedSystemExit$1.evaluate(ExpectedSystemExit.java:130)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 Starting test.
 DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
 java.lang.ArrayIndexOutOfBoundsException: -1
 	at java.util.ArrayList.elementData(ArrayList.java:422)
 	at java.util.ArrayList.get(ArrayList.java:435)
-	at com.yahoo.ycsb.workloads.RestWorkload.getNextURL(RestWorkload.java:860)
-	at com.yahoo.ycsb.workloads.RestWorkload.doTransactionInsert(RestWorkload.java:913)
-	at com.yahoo.ycsb.workloads.RestWorkload.doTransaction(RestWorkload.java:759)
+	at com.yahoo.ycsb.workloads.RestWorkload.getNextURL(RestWorkload.java:907)
+	at com.yahoo.ycsb.workloads.RestWorkload.doTransactionInsert(RestWorkload.java:971)
+	at com.yahoo.ycsb.workloads.RestWorkload.doTransaction(RestWorkload.java:802)
 	at com.yahoo.ycsb.ClientThread.run(Client.java:455)
 	at java.lang.Thread.run(Thread.java:748)
-Exception in thread &quot;Thread-9&quot; org.junit.contrib.java.lang.system.internal.CheckExitCalled: Tried to exit with status 0.
+Exception in thread &quot;Thread-26&quot; org.junit.contrib.java.lang.system.internal.CheckExitCalled: Tried to exit with status 0.
 	at org.junit.contrib.java.lang.system.internal.NoExitSecurityManager.checkExit(NoExitSecurityManager.java:24)
 	at java.lang.Runtime.exit(Runtime.java:107)
 	at java.lang.System.exit(System.java:971)
@@ -343,7 +527,7 @@ Exception in thread &quot;Thread-9&quot; org.junit.contrib.java.lang.system.inte
 	at java.lang.Thread.run(Thread.java:748)
 </system-err>
   </testcase>
-  <testcase classname="com.yahoo.ycsb.webservice.rest.IntegrationTest" name="testReadOpsBenchmarkFailure" time="0.879">
+  <testcase classname="com.yahoo.ycsb.webservice.rest.IntegrationTest" name="testReadOpsBenchmarkFailure" time="0.343">
     <failure message="expected:&lt;true&gt; but was:&lt;false&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;false&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -379,30 +563,76 @@ Exception in thread &quot;Thread-9&quot; org.junit.contrib.java.lang.system.inte
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
-    <system-out>java.lang.ArrayIndexOutOfBoundsException: -1
+    <system-out>databasename=null
+java.lang.ArrayIndexOutOfBoundsException: -1
 	at java.util.ArrayList.elementData(ArrayList.java:422)
 	at java.util.ArrayList.get(ArrayList.java:435)
-	at com.yahoo.ycsb.workloads.RestWorkload.getNextURL(RestWorkload.java:860)
-	at com.yahoo.ycsb.workloads.RestWorkload.doTransactionRead(RestWorkload.java:885)
-	at com.yahoo.ycsb.workloads.RestWorkload.doTransaction(RestWorkload.java:765)
+	at com.yahoo.ycsb.workloads.RestWorkload.getNextURL(RestWorkload.java:907)
+	at com.yahoo.ycsb.workloads.RestWorkload.doTransactionRead(RestWorkload.java:932)
+	at com.yahoo.ycsb.workloads.RestWorkload.doTransaction(RestWorkload.java:808)
 	at com.yahoo.ycsb.ClientThread.run(Client.java:455)
 	at java.lang.Thread.run(Thread.java:748)
 </system-out>
-    <system-err>Command line: -target 1 -t -P /home/zhaole/causaltest/rest/target/test-classes/workload_rest -p url.prefix=http://127.0.0.1:8080/webService/rest/resource/ -p url.trace.read=/home/zhaole/causaltest/rest/target/test-classes/error_trace.txt -p url.trace.insert=/home/zhaole/causaltest/rest/target/test-classes/error_trace.txt -p url.trace.update=/home/zhaole/causaltest/rest/target/test-classes/error_trace.txt -p url.trace.delete=/home/zhaole/causaltest/rest/target/test-classes/error_trace.txt -p exportfile=/home/zhaole/causaltest/rest/target/test-classes/results.txt -p readproportion=1.0 -p updateproportion=0.0 -p deleteproportion=0.0 -p insertproportion=0.0
+    <system-err>Command line: -target 1 -t -P /home/zl/Documents/causaltest/rest/target/test-classes/workload_rest -p url.prefix=http://127.0.0.1:8081/webService/rest/resource/ -p url.trace.read=/home/zl/Documents/causaltest/rest/target/test-classes/error_trace.txt -p url.trace.insert=/home/zl/Documents/causaltest/rest/target/test-classes/error_trace.txt -p url.trace.update=/home/zl/Documents/causaltest/rest/target/test-classes/error_trace.txt -p url.trace.delete=/home/zl/Documents/causaltest/rest/target/test-classes/error_trace.txt -p exportfile=/home/zl/Documents/causaltest/rest/target/test-classes/results.txt -p readproportion=1.0 -p updateproportion=0.0 -p deleteproportion=0.0 -p insertproportion=0.0
 YCSB Client 0.16.0-SNAPSHOT
 
 Loading workload...
+java.lang.ClassNotFoundException: com.yahoo.ycsb.workloads.dbinstance.cassandratwitterreadyouwrite
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.yahoo.ycsb.workloads.RestWorkload.init(RestWorkload.java:191)
+	at com.yahoo.ycsb.Client.initWorkload(Client.java:911)
+	at com.yahoo.ycsb.Client.main(Client.java:754)
+	at com.yahoo.ycsb.webservice.rest.IntegrationTest.testReadOpsBenchmarkFailure(IntegrationTest.java:119)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.contrib.java.lang.system.ExpectedSystemExit$1.evaluate(ExpectedSystemExit.java:130)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 Starting test.
 DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
 java.lang.ArrayIndexOutOfBoundsException: -1
 	at java.util.ArrayList.elementData(ArrayList.java:422)
 	at java.util.ArrayList.get(ArrayList.java:435)
-	at com.yahoo.ycsb.workloads.RestWorkload.getNextURL(RestWorkload.java:860)
-	at com.yahoo.ycsb.workloads.RestWorkload.doTransactionRead(RestWorkload.java:885)
-	at com.yahoo.ycsb.workloads.RestWorkload.doTransaction(RestWorkload.java:765)
+	at com.yahoo.ycsb.workloads.RestWorkload.getNextURL(RestWorkload.java:907)
+	at com.yahoo.ycsb.workloads.RestWorkload.doTransactionRead(RestWorkload.java:932)
+	at com.yahoo.ycsb.workloads.RestWorkload.doTransaction(RestWorkload.java:808)
 	at com.yahoo.ycsb.ClientThread.run(Client.java:455)
 	at java.lang.Thread.run(Thread.java:748)
-Exception in thread &quot;Thread-11&quot; org.junit.contrib.java.lang.system.internal.CheckExitCalled: Tried to exit with status 0.
+Exception in thread &quot;Thread-28&quot; org.junit.contrib.java.lang.system.internal.CheckExitCalled: Tried to exit with status 0.
 	at org.junit.contrib.java.lang.system.internal.NoExitSecurityManager.checkExit(NoExitSecurityManager.java:24)
 	at java.lang.Runtime.exit(Runtime.java:107)
 	at java.lang.System.exit(System.java:971)
@@ -410,7 +640,7 @@ Exception in thread &quot;Thread-11&quot; org.junit.contrib.java.lang.system.int
 	at java.lang.Thread.run(Thread.java:748)
 </system-err>
   </testcase>
-  <testcase classname="com.yahoo.ycsb.webservice.rest.IntegrationTest" name="testReadOpsBenchmarkSuccess" time="0.392">
+  <testcase classname="com.yahoo.ycsb.webservice.rest.IntegrationTest" name="testReadOpsBenchmarkSuccess" time="0.48">
     <failure message="expected:&lt;true&gt; but was:&lt;false&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;false&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -446,30 +676,76 @@ Exception in thread &quot;Thread-11&quot; org.junit.contrib.java.lang.system.int
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
-    <system-out>java.lang.ArrayIndexOutOfBoundsException: -1
+    <system-out>databasename=null
+java.lang.ArrayIndexOutOfBoundsException: -1
 	at java.util.ArrayList.elementData(ArrayList.java:422)
 	at java.util.ArrayList.get(ArrayList.java:435)
-	at com.yahoo.ycsb.workloads.RestWorkload.getNextURL(RestWorkload.java:860)
-	at com.yahoo.ycsb.workloads.RestWorkload.doTransactionRead(RestWorkload.java:885)
-	at com.yahoo.ycsb.workloads.RestWorkload.doTransaction(RestWorkload.java:765)
+	at com.yahoo.ycsb.workloads.RestWorkload.getNextURL(RestWorkload.java:907)
+	at com.yahoo.ycsb.workloads.RestWorkload.doTransactionRead(RestWorkload.java:932)
+	at com.yahoo.ycsb.workloads.RestWorkload.doTransaction(RestWorkload.java:808)
 	at com.yahoo.ycsb.ClientThread.run(Client.java:455)
 	at java.lang.Thread.run(Thread.java:748)
 </system-out>
-    <system-err>Command line: -target 1 -t -P /home/zhaole/causaltest/rest/target/test-classes/workload_rest -p url.prefix=http://127.0.0.1:8080/webService/rest/resource/ -p url.trace.read=/home/zhaole/causaltest/rest/target/test-classes/trace.txt -p url.trace.insert=/home/zhaole/causaltest/rest/target/test-classes/trace.txt -p url.trace.update=/home/zhaole/causaltest/rest/target/test-classes/trace.txt -p url.trace.delete=/home/zhaole/causaltest/rest/target/test-classes/trace.txt -p exportfile=/home/zhaole/causaltest/rest/target/test-classes/results.txt -p readproportion=1.0 -p updateproportion=0.0 -p deleteproportion=0.0 -p insertproportion=0.0
+    <system-err>Command line: -target 1 -t -P /home/zl/Documents/causaltest/rest/target/test-classes/workload_rest -p url.prefix=http://127.0.0.1:8081/webService/rest/resource/ -p url.trace.read=/home/zl/Documents/causaltest/rest/target/test-classes/trace.txt -p url.trace.insert=/home/zl/Documents/causaltest/rest/target/test-classes/trace.txt -p url.trace.update=/home/zl/Documents/causaltest/rest/target/test-classes/trace.txt -p url.trace.delete=/home/zl/Documents/causaltest/rest/target/test-classes/trace.txt -p exportfile=/home/zl/Documents/causaltest/rest/target/test-classes/results.txt -p readproportion=1.0 -p updateproportion=0.0 -p deleteproportion=0.0 -p insertproportion=0.0
 YCSB Client 0.16.0-SNAPSHOT
 
 Loading workload...
+java.lang.ClassNotFoundException: com.yahoo.ycsb.workloads.dbinstance.cassandratwitterreadyouwrite
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.yahoo.ycsb.workloads.RestWorkload.init(RestWorkload.java:191)
+	at com.yahoo.ycsb.Client.initWorkload(Client.java:911)
+	at com.yahoo.ycsb.Client.main(Client.java:754)
+	at com.yahoo.ycsb.webservice.rest.IntegrationTest.testReadOpsBenchmarkSuccess(IntegrationTest.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.contrib.java.lang.system.ExpectedSystemExit$1.evaluate(ExpectedSystemExit.java:130)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 Starting test.
 DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
 java.lang.ArrayIndexOutOfBoundsException: -1
 	at java.util.ArrayList.elementData(ArrayList.java:422)
 	at java.util.ArrayList.get(ArrayList.java:435)
-	at com.yahoo.ycsb.workloads.RestWorkload.getNextURL(RestWorkload.java:860)
-	at com.yahoo.ycsb.workloads.RestWorkload.doTransactionRead(RestWorkload.java:885)
-	at com.yahoo.ycsb.workloads.RestWorkload.doTransaction(RestWorkload.java:765)
+	at com.yahoo.ycsb.workloads.RestWorkload.getNextURL(RestWorkload.java:907)
+	at com.yahoo.ycsb.workloads.RestWorkload.doTransactionRead(RestWorkload.java:932)
+	at com.yahoo.ycsb.workloads.RestWorkload.doTransaction(RestWorkload.java:808)
 	at com.yahoo.ycsb.ClientThread.run(Client.java:455)
 	at java.lang.Thread.run(Thread.java:748)
-Exception in thread &quot;Thread-13&quot; org.junit.contrib.java.lang.system.internal.CheckExitCalled: Tried to exit with status 0.
+Exception in thread &quot;Thread-30&quot; org.junit.contrib.java.lang.system.internal.CheckExitCalled: Tried to exit with status 0.
 	at org.junit.contrib.java.lang.system.internal.NoExitSecurityManager.checkExit(NoExitSecurityManager.java:24)
 	at java.lang.Runtime.exit(Runtime.java:107)
 	at java.lang.System.exit(System.java:971)
@@ -477,7 +753,7 @@ Exception in thread &quot;Thread-13&quot; org.junit.contrib.java.lang.system.int
 	at java.lang.Thread.run(Thread.java:748)
 </system-err>
   </testcase>
-  <testcase classname="com.yahoo.ycsb.webservice.rest.IntegrationTest" name="testUpdateOpsBenchmarkFailure" time="0.197">
+  <testcase classname="com.yahoo.ycsb.webservice.rest.IntegrationTest" name="testUpdateOpsBenchmarkFailure" time="0.856">
     <failure message="expected:&lt;true&gt; but was:&lt;false&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;false&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -513,30 +789,76 @@ Exception in thread &quot;Thread-13&quot; org.junit.contrib.java.lang.system.int
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
-    <system-out>java.lang.ArrayIndexOutOfBoundsException: -1
+    <system-out>databasename=null
+java.lang.ArrayIndexOutOfBoundsException: -1
 	at java.util.ArrayList.elementData(ArrayList.java:422)
 	at java.util.ArrayList.get(ArrayList.java:435)
-	at com.yahoo.ycsb.workloads.RestWorkload.getNextURL(RestWorkload.java:860)
-	at com.yahoo.ycsb.workloads.RestWorkload.doTransactionUpdate(RestWorkload.java:925)
-	at com.yahoo.ycsb.workloads.RestWorkload.doTransaction(RestWorkload.java:756)
+	at com.yahoo.ycsb.workloads.RestWorkload.getNextURL(RestWorkload.java:907)
+	at com.yahoo.ycsb.workloads.RestWorkload.doTransactionUpdate(RestWorkload.java:983)
+	at com.yahoo.ycsb.workloads.RestWorkload.doTransaction(RestWorkload.java:799)
 	at com.yahoo.ycsb.ClientThread.run(Client.java:455)
 	at java.lang.Thread.run(Thread.java:748)
 </system-out>
-    <system-err>Command line: -target 1 -t -P /home/zhaole/causaltest/rest/target/test-classes/workload_rest -p url.prefix=http://127.0.0.1:8080/webService/rest/resource/ -p url.trace.read=/home/zhaole/causaltest/rest/target/test-classes/error_trace.txt -p url.trace.insert=/home/zhaole/causaltest/rest/target/test-classes/error_trace.txt -p url.trace.update=/home/zhaole/causaltest/rest/target/test-classes/error_trace.txt -p url.trace.delete=/home/zhaole/causaltest/rest/target/test-classes/error_trace.txt -p exportfile=/home/zhaole/causaltest/rest/target/test-classes/results.txt -p readproportion=0.0 -p updateproportion=1.0 -p deleteproportion=0.0 -p insertproportion=0.0
+    <system-err>Command line: -target 1 -t -P /home/zl/Documents/causaltest/rest/target/test-classes/workload_rest -p url.prefix=http://127.0.0.1:8081/webService/rest/resource/ -p url.trace.read=/home/zl/Documents/causaltest/rest/target/test-classes/error_trace.txt -p url.trace.insert=/home/zl/Documents/causaltest/rest/target/test-classes/error_trace.txt -p url.trace.update=/home/zl/Documents/causaltest/rest/target/test-classes/error_trace.txt -p url.trace.delete=/home/zl/Documents/causaltest/rest/target/test-classes/error_trace.txt -p exportfile=/home/zl/Documents/causaltest/rest/target/test-classes/results.txt -p readproportion=0.0 -p updateproportion=1.0 -p deleteproportion=0.0 -p insertproportion=0.0
 YCSB Client 0.16.0-SNAPSHOT
 
 Loading workload...
+java.lang.ClassNotFoundException: com.yahoo.ycsb.workloads.dbinstance.cassandratwitterreadyouwrite
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.yahoo.ycsb.workloads.RestWorkload.init(RestWorkload.java:191)
+	at com.yahoo.ycsb.Client.initWorkload(Client.java:911)
+	at com.yahoo.ycsb.Client.main(Client.java:754)
+	at com.yahoo.ycsb.webservice.rest.IntegrationTest.testUpdateOpsBenchmarkFailure(IntegrationTest.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.contrib.java.lang.system.ExpectedSystemExit$1.evaluate(ExpectedSystemExit.java:130)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 Starting test.
 DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
 java.lang.ArrayIndexOutOfBoundsException: -1
 	at java.util.ArrayList.elementData(ArrayList.java:422)
 	at java.util.ArrayList.get(ArrayList.java:435)
-	at com.yahoo.ycsb.workloads.RestWorkload.getNextURL(RestWorkload.java:860)
-	at com.yahoo.ycsb.workloads.RestWorkload.doTransactionUpdate(RestWorkload.java:925)
-	at com.yahoo.ycsb.workloads.RestWorkload.doTransaction(RestWorkload.java:756)
+	at com.yahoo.ycsb.workloads.RestWorkload.getNextURL(RestWorkload.java:907)
+	at com.yahoo.ycsb.workloads.RestWorkload.doTransactionUpdate(RestWorkload.java:983)
+	at com.yahoo.ycsb.workloads.RestWorkload.doTransaction(RestWorkload.java:799)
 	at com.yahoo.ycsb.ClientThread.run(Client.java:455)
 	at java.lang.Thread.run(Thread.java:748)
-Exception in thread &quot;Thread-15&quot; org.junit.contrib.java.lang.system.internal.CheckExitCalled: Tried to exit with status 0.
+Exception in thread &quot;Thread-32&quot; org.junit.contrib.java.lang.system.internal.CheckExitCalled: Tried to exit with status 0.
 	at org.junit.contrib.java.lang.system.internal.NoExitSecurityManager.checkExit(NoExitSecurityManager.java:24)
 	at java.lang.Runtime.exit(Runtime.java:107)
 	at java.lang.System.exit(System.java:971)
@@ -544,7 +866,7 @@ Exception in thread &quot;Thread-15&quot; org.junit.contrib.java.lang.system.int
 	at java.lang.Thread.run(Thread.java:748)
 </system-err>
   </testcase>
-  <testcase classname="com.yahoo.ycsb.webservice.rest.IntegrationTest" name="testUpdateOpsBenchmarkSuccess" time="0.841">
+  <testcase classname="com.yahoo.ycsb.webservice.rest.IntegrationTest" name="testUpdateOpsBenchmarkSuccess" time="0.429">
     <failure message="expected:&lt;true&gt; but was:&lt;false&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;false&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -580,30 +902,76 @@ Exception in thread &quot;Thread-15&quot; org.junit.contrib.java.lang.system.int
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
-    <system-out>java.lang.ArrayIndexOutOfBoundsException: -1
+    <system-out>databasename=null
+java.lang.ArrayIndexOutOfBoundsException: -1
 	at java.util.ArrayList.elementData(ArrayList.java:422)
 	at java.util.ArrayList.get(ArrayList.java:435)
-	at com.yahoo.ycsb.workloads.RestWorkload.getNextURL(RestWorkload.java:860)
-	at com.yahoo.ycsb.workloads.RestWorkload.doTransactionUpdate(RestWorkload.java:925)
-	at com.yahoo.ycsb.workloads.RestWorkload.doTransaction(RestWorkload.java:756)
+	at com.yahoo.ycsb.workloads.RestWorkload.getNextURL(RestWorkload.java:907)
+	at com.yahoo.ycsb.workloads.RestWorkload.doTransactionUpdate(RestWorkload.java:983)
+	at com.yahoo.ycsb.workloads.RestWorkload.doTransaction(RestWorkload.java:799)
 	at com.yahoo.ycsb.ClientThread.run(Client.java:455)
 	at java.lang.Thread.run(Thread.java:748)
 </system-out>
-    <system-err>Command line: -target 1 -t -P /home/zhaole/causaltest/rest/target/test-classes/workload_rest -p url.prefix=http://127.0.0.1:8080/webService/rest/resource/ -p url.trace.read=/home/zhaole/causaltest/rest/target/test-classes/trace.txt -p url.trace.insert=/home/zhaole/causaltest/rest/target/test-classes/trace.txt -p url.trace.update=/home/zhaole/causaltest/rest/target/test-classes/trace.txt -p url.trace.delete=/home/zhaole/causaltest/rest/target/test-classes/trace.txt -p exportfile=/home/zhaole/causaltest/rest/target/test-classes/results.txt -p readproportion=0.0 -p updateproportion=1.0 -p deleteproportion=0.0 -p insertproportion=0.0
+    <system-err>Command line: -target 1 -t -P /home/zl/Documents/causaltest/rest/target/test-classes/workload_rest -p url.prefix=http://127.0.0.1:8081/webService/rest/resource/ -p url.trace.read=/home/zl/Documents/causaltest/rest/target/test-classes/trace.txt -p url.trace.insert=/home/zl/Documents/causaltest/rest/target/test-classes/trace.txt -p url.trace.update=/home/zl/Documents/causaltest/rest/target/test-classes/trace.txt -p url.trace.delete=/home/zl/Documents/causaltest/rest/target/test-classes/trace.txt -p exportfile=/home/zl/Documents/causaltest/rest/target/test-classes/results.txt -p readproportion=0.0 -p updateproportion=1.0 -p deleteproportion=0.0 -p insertproportion=0.0
 YCSB Client 0.16.0-SNAPSHOT
 
 Loading workload...
+java.lang.ClassNotFoundException: com.yahoo.ycsb.workloads.dbinstance.cassandratwitterreadyouwrite
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.yahoo.ycsb.workloads.RestWorkload.init(RestWorkload.java:191)
+	at com.yahoo.ycsb.Client.initWorkload(Client.java:911)
+	at com.yahoo.ycsb.Client.main(Client.java:754)
+	at com.yahoo.ycsb.webservice.rest.IntegrationTest.testUpdateOpsBenchmarkSuccess(IntegrationTest.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.contrib.java.lang.system.ExpectedSystemExit$1.evaluate(ExpectedSystemExit.java:130)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 Starting test.
 DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
 java.lang.ArrayIndexOutOfBoundsException: -1
 	at java.util.ArrayList.elementData(ArrayList.java:422)
 	at java.util.ArrayList.get(ArrayList.java:435)
-	at com.yahoo.ycsb.workloads.RestWorkload.getNextURL(RestWorkload.java:860)
-	at com.yahoo.ycsb.workloads.RestWorkload.doTransactionUpdate(RestWorkload.java:925)
-	at com.yahoo.ycsb.workloads.RestWorkload.doTransaction(RestWorkload.java:756)
+	at com.yahoo.ycsb.workloads.RestWorkload.getNextURL(RestWorkload.java:907)
+	at com.yahoo.ycsb.workloads.RestWorkload.doTransactionUpdate(RestWorkload.java:983)
+	at com.yahoo.ycsb.workloads.RestWorkload.doTransaction(RestWorkload.java:799)
 	at com.yahoo.ycsb.ClientThread.run(Client.java:455)
 	at java.lang.Thread.run(Thread.java:748)
-Exception in thread &quot;Thread-17&quot; org.junit.contrib.java.lang.system.internal.CheckExitCalled: Tried to exit with status 0.
+Exception in thread &quot;Thread-34&quot; org.junit.contrib.java.lang.system.internal.CheckExitCalled: Tried to exit with status 0.
 	at org.junit.contrib.java.lang.system.internal.NoExitSecurityManager.checkExit(NoExitSecurityManager.java:24)
 	at java.lang.Runtime.exit(Runtime.java:107)
 	at java.lang.System.exit(System.java:971)

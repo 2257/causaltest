@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="17" failures="12" name="com.yahoo.ycsb.webservice.rest.RestClientTest" time="0.073" errors="0" skipped="0">
+<testsuite tests="17" failures="12" name="com.yahoo.ycsb.webservice.rest.RestClientTest" time="0.648" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="sun.boot.library.path" value="/home/zhaole/jdk1.8.0_181/jre/lib/amd64"/>
-    <property name="java.vm.version" value="25.181-b13"/>
+    <property name="sun.boot.library.path" value="/home/zl/Documents/jdk1.8.0_211/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.211-b12"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="/home/zhaole/causaltest"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/zl/Documents/causaltest"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -15,53 +15,53 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/home/zhaole/causaltest"/>
-    <property name="java.runtime.version" value="1.8.0_181-b13"/>
+    <property name="user.dir" value="/home/zl/Documents/causaltest"/>
+    <property name="java.runtime.version" value="1.8.0_211-b12"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
-    <property name="java.endorsed.dirs" value="/home/zhaole/jdk1.8.0_181/jre/lib/endorsed"/>
+    <property name="java.endorsed.dirs" value="/home/zl/Documents/jdk1.8.0_211/jre/lib/endorsed"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.io.tmpdir" value="/tmp"/>
     <property name="line.separator" value="
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Linux"/>
-    <property name="classworlds.conf" value="/home/zhaole/apache-maven-3.5.4/bin/m2.conf"/>
+    <property name="classworlds.conf" value="/home/zl/Documents/idea-IU-191.7479.19/plugins/maven/lib/maven3/bin/m2.conf"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.library.path" value="/data/zhaole/pgxl/lib:/home/zhaole/opensslprefix/lib:/data/zhaole/pgxl/lib:/home/zhaole/opensslprefix/lib::/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
-    <property name="maven.conf" value="/home/zhaole/apache-maven-3.5.4/conf"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="3.10.0-693.2.2.el7.x86_64"/>
-    <property name="library.jansi.path" value="/home/zhaole/apache-maven-3.5.4/lib/jansi-native"/>
-    <property name="user.home" value="/home/zhaole"/>
-    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="os.version" value="3.10.0-514.el7.x86_64"/>
+    <property name="user.home" value="/home/zl"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
     <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
-    <property name="java.specification.version" value="1.8"/>
     <property name="file.encoding" value="UTF-8"/>
-    <property name="user.name" value="zhaole"/>
-    <property name="java.class.path" value="/home/zhaole/apache-maven-3.5.4/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="user.name" value="zl"/>
+    <property name="java.class.path" value="/home/zl/Documents/idea-IU-191.7479.19/plugins/maven/lib/maven3/boot/plexus-classworlds-2.5.2.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="java.home" value="/home/zhaole/jdk1.8.0_181/jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean package"/>
+    <property name="java.home" value="/home/zl/Documents/jdk1.8.0_211/jre"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version2019.1.3 clean install"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="idea.version2019.1.3" value="true"/>
     <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.version" value="1.8.0_181"/>
-    <property name="java.ext.dirs" value="/home/zhaole/jdk1.8.0_181/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="java.version" value="1.8.0_211"/>
+    <property name="java.ext.dirs" value="/home/zl/Documents/jdk1.8.0_211/jre/lib/ext:/usr/java/packages/lib/ext"/>
     <property name="securerandom.source" value="file:/dev/./urandom"/>
-    <property name="sun.boot.class.path" value="/home/zhaole/jdk1.8.0_181/jre/lib/resources.jar:/home/zhaole/jdk1.8.0_181/jre/lib/rt.jar:/home/zhaole/jdk1.8.0_181/jre/lib/sunrsasign.jar:/home/zhaole/jdk1.8.0_181/jre/lib/jsse.jar:/home/zhaole/jdk1.8.0_181/jre/lib/jce.jar:/home/zhaole/jdk1.8.0_181/jre/lib/charsets.jar:/home/zhaole/jdk1.8.0_181/jre/lib/jfr.jar:/home/zhaole/jdk1.8.0_181/jre/classes"/>
+    <property name="sun.boot.class.path" value="/home/zl/Documents/jdk1.8.0_211/jre/lib/resources.jar:/home/zl/Documents/jdk1.8.0_211/jre/lib/rt.jar:/home/zl/Documents/jdk1.8.0_211/jre/lib/sunrsasign.jar:/home/zl/Documents/jdk1.8.0_211/jre/lib/jsse.jar:/home/zl/Documents/jdk1.8.0_211/jre/lib/jce.jar:/home/zl/Documents/jdk1.8.0_211/jre/lib/charsets.jar:/home/zl/Documents/jdk1.8.0_211/jre/lib/jfr.jar:/home/zl/Documents/jdk1.8.0_211/jre/classes"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="/home/zhaole/apache-maven-3.5.4"/>
+    <property name="maven.home" value="/home/zl/Documents/idea-IU-191.7479.19/plugins/maven/lib/maven3"/>
     <property name="file.separator" value="/"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="read_200" time="0.039">
+  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="read_200" time="0.32">
     <failure message="expected:&lt;Status [name=OK, description=The operation completed successfully.]&gt; but was:&lt;Status [name=NOT_FOUND, description=The requested record was not found.]&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;Status [name=OK, description=The operation completed successfully.]&gt; but was:&lt;Status [name=NOT_FOUND, description=The requested record was not found.]&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -100,31 +100,26 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
-    <system-out>[httpGet] resource_valid___{response=&lt;!doctype html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type=&quot;text/css&quot;&gt;h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class=&quot;line&quot; /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; &amp;#47;nullresource_valid&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class=&quot;line&quot; /&gt;&lt;h3&gt;Apache Tomcat/9.0.13&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;}__404
+    <system-out>databasename=null
+[httpGet] resource_valid___{response=}__404
 </system-out>
-    <system-err>Dec 08, 2018 11:22:43 AM org.apache.coyote.AbstractProtocol pause
-INFO: Pausing ProtocolHandler [&quot;http-nio-8081&quot;]
-Dec 08, 2018 11:22:43 AM org.apache.catalina.core.StandardService stopInternal
-INFO: Stopping service Tomcat
-Dec 08, 2018 11:22:43 AM org.apache.coyote.AbstractProtocol stop
-INFO: Stopping ProtocolHandler [&quot;http-nio-8081&quot;]
-Dec 08, 2018 11:22:43 AM org.apache.coyote.AbstractProtocol init
-INFO: Initializing ProtocolHandler [&quot;http-nio-8082&quot;]
-Dec 08, 2018 11:22:43 AM org.apache.tomcat.util.net.NioSelectorPool getSharedSelector
+    <system-err>Jul 28, 2019 11:49:16 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler [&quot;http-nio-8080&quot;]
+Jul 28, 2019 11:49:16 PM org.apache.tomcat.util.net.NioSelectorPool getSharedSelector
 INFO: Using a shared selector for servlet write/read
-Dec 08, 2018 11:22:43 AM org.apache.catalina.core.StandardService startInternal
+Jul 28, 2019 11:49:16 PM org.apache.catalina.core.StandardService startInternal
 INFO: Starting service Tomcat
-Dec 08, 2018 11:22:43 AM org.apache.catalina.core.StandardEngine startInternal
+Jul 28, 2019 11:49:16 PM org.apache.catalina.core.StandardEngine startInternal
 INFO: Starting Servlet Engine: Apache Tomcat/8.0.28
-Dec 08, 2018 11:22:43 AM org.apache.catalina.startup.ContextConfig getDefaultWebXmlFragment
+Jul 28, 2019 11:49:16 PM org.apache.catalina.startup.ContextConfig getDefaultWebXmlFragment
 INFO: No global web.xml found
-Dec 08, 2018 11:22:43 AM org.apache.jasper.servlet.TldScanner scanJars
+Jul 28, 2019 11:49:16 PM org.apache.jasper.servlet.TldScanner scanJars
 INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-Dec 08, 2018 11:22:43 AM org.apache.coyote.AbstractProtocol start
-INFO: Starting ProtocolHandler [&quot;http-nio-8082&quot;]
+Jul 28, 2019 11:49:16 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler [&quot;http-nio-8080&quot;]
 </system-err>
   </testcase>
-  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="read_403" time="0.003">
+  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="read_403" time="0.081">
     <failure message="expected:&lt;Status [name=FORBIDDEN, description=The operation is forbidden.]&gt; but was:&lt;Status [name=NOT_FOUND, description=The requested record was not found.]&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;Status [name=FORBIDDEN, description=The operation is forbidden.]&gt; but was:&lt;Status [name=NOT_FOUND, description=The requested record was not found.]&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -163,11 +158,11 @@ INFO: Starting ProtocolHandler [&quot;http-nio-8082&quot;]
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
-    <system-out>[httpGet] resource_unauthorized___{response=&lt;!doctype html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type=&quot;text/css&quot;&gt;h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class=&quot;line&quot; /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; &amp;#47;nullresource_unauthorized&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class=&quot;line&quot; /&gt;&lt;h3&gt;Apache Tomcat/9.0.13&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;}__404
+    <system-out>[httpGet] resource_unauthorized___{response=}__404
 </system-out>
   </testcase>
-  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="read_404" time="0.003"/>
-  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="read_500" time="0.002">
+  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="read_404" time="0.033"/>
+  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="read_500" time="0.025">
     <failure message="expected:&lt;Status [name=ERROR, description=The operation failed.]&gt; but was:&lt;Status [name=NOT_FOUND, description=The requested record was not found.]&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;Status [name=ERROR, description=The operation failed.]&gt; but was:&lt;Status [name=NOT_FOUND, description=The requested record was not found.]&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -206,12 +201,51 @@ INFO: Starting ProtocolHandler [&quot;http-nio-8082&quot;]
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
-    <system-out>[httpGet] resource_invalid___{response=&lt;!doctype html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type=&quot;text/css&quot;&gt;h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class=&quot;line&quot; /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; &amp;#47;nullresource_invalid&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class=&quot;line&quot; /&gt;&lt;h3&gt;Apache Tomcat/9.0.13&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;}__404
+    <system-out>[httpGet] resource_invalid___{response=}__404
 </system-out>
   </testcase>
-  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="update_200" time="0.004"/>
+  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="update_200" time="0.01">
+    <failure message="expected:&lt;Status [name=OK, description=The operation completed successfully.]&gt; but was:&lt;Status [name=NOT_FOUND, description=The requested record was not found.]&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;Status [name=OK, description=The operation completed successfully.]&gt; but was:&lt;Status [name=NOT_FOUND, description=The requested record was not found.]&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.yahoo.ycsb.webservice.rest.RestClientTest.update_200(RestClientTest.java:190)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</failure>
+  </testcase>
   <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="update_403" time="0.003">
-    <failure message="expected:&lt;Status [name=FORBIDDEN, description=The operation is forbidden.]&gt; but was:&lt;Status [name=OK, description=The operation completed successfully.]&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;Status [name=FORBIDDEN, description=The operation is forbidden.]&gt; but was:&lt;Status [name=OK, description=The operation completed successfully.]&gt;
+    <failure message="expected:&lt;Status [name=FORBIDDEN, description=The operation is forbidden.]&gt; but was:&lt;Status [name=NOT_FOUND, description=The requested record was not found.]&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;Status [name=FORBIDDEN, description=The operation is forbidden.]&gt; but was:&lt;Status [name=NOT_FOUND, description=The requested record was not found.]&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
 	at org.junit.Assert.assertEquals(Assert.java:118)
@@ -250,48 +284,9 @@ INFO: Starting ProtocolHandler [&quot;http-nio-8082&quot;]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
   </testcase>
-  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="update_404" time="0.002">
-    <failure message="expected:&lt;Status [name=NOT_FOUND, description=The requested record was not found.]&gt; but was:&lt;Status [name=OK, description=The operation completed successfully.]&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;Status [name=NOT_FOUND, description=The requested record was not found.]&gt; but was:&lt;Status [name=OK, description=The operation completed successfully.]&gt;
-	at org.junit.Assert.fail(Assert.java:88)
-	at org.junit.Assert.failNotEquals(Assert.java:834)
-	at org.junit.Assert.assertEquals(Assert.java:118)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at com.yahoo.ycsb.webservice.rest.RestClientTest.update_404(RestClientTest.java:206)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</failure>
-  </testcase>
-  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="update_500" time="0.002">
-    <failure message="expected:&lt;Status [name=ERROR, description=The operation failed.]&gt; but was:&lt;Status [name=OK, description=The operation completed successfully.]&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;Status [name=ERROR, description=The operation failed.]&gt; but was:&lt;Status [name=OK, description=The operation completed successfully.]&gt;
+  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="update_404" time="0.003"/>
+  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="update_500" time="0.003">
+    <failure message="expected:&lt;Status [name=ERROR, description=The operation failed.]&gt; but was:&lt;Status [name=NOT_FOUND, description=The requested record was not found.]&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;Status [name=ERROR, description=The operation failed.]&gt; but was:&lt;Status [name=NOT_FOUND, description=The requested record was not found.]&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
 	at org.junit.Assert.assertEquals(Assert.java:118)
@@ -331,7 +326,7 @@ INFO: Starting ProtocolHandler [&quot;http-nio-8082&quot;]
 </failure>
   </testcase>
   <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="scan" time="0"/>
-  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="insert_200" time="0.002">
+  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="insert_200" time="0.028">
     <failure message="expected:&lt;Status [name=OK, description=The operation completed successfully.]&gt; but was:&lt;Status [name=NOT_FOUND, description=The requested record was not found.]&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;Status [name=OK, description=The operation completed successfully.]&gt; but was:&lt;Status [name=NOT_FOUND, description=The requested record was not found.]&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -371,7 +366,7 @@ INFO: Starting ProtocolHandler [&quot;http-nio-8082&quot;]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
   </testcase>
-  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="insert_403" time="0.002">
+  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="insert_403" time="0.008">
     <failure message="expected:&lt;Status [name=FORBIDDEN, description=The operation is forbidden.]&gt; but was:&lt;Status [name=NOT_FOUND, description=The requested record was not found.]&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;Status [name=FORBIDDEN, description=The operation is forbidden.]&gt; but was:&lt;Status [name=NOT_FOUND, description=The requested record was not found.]&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -411,8 +406,8 @@ INFO: Starting ProtocolHandler [&quot;http-nio-8082&quot;]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
   </testcase>
-  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="insert_404" time="0.002"/>
-  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="insert_500" time="0.003">
+  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="insert_404" time="0.061"/>
+  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="insert_500" time="0.015">
     <failure message="expected:&lt;Status [name=ERROR, description=The operation failed.]&gt; but was:&lt;Status [name=NOT_FOUND, description=The requested record was not found.]&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;Status [name=ERROR, description=The operation failed.]&gt; but was:&lt;Status [name=NOT_FOUND, description=The requested record was not found.]&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -452,9 +447,48 @@ INFO: Starting ProtocolHandler [&quot;http-nio-8082&quot;]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
   </testcase>
-  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="delete_200" time="0.001"/>
-  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="delete_403" time="0.001">
-    <failure message="expected:&lt;Status [name=FORBIDDEN, description=The operation is forbidden.]&gt; but was:&lt;Status [name=OK, description=The operation completed successfully.]&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;Status [name=FORBIDDEN, description=The operation is forbidden.]&gt; but was:&lt;Status [name=OK, description=The operation completed successfully.]&gt;
+  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="delete_200" time="0.021">
+    <failure message="expected:&lt;Status [name=OK, description=The operation completed successfully.]&gt; but was:&lt;Status [name=NOT_FOUND, description=The requested record was not found.]&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;Status [name=OK, description=The operation completed successfully.]&gt; but was:&lt;Status [name=NOT_FOUND, description=The requested record was not found.]&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.yahoo.ycsb.webservice.rest.RestClientTest.delete_200(RestClientTest.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</failure>
+  </testcase>
+  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="delete_403" time="0.002">
+    <failure message="expected:&lt;Status [name=FORBIDDEN, description=The operation is forbidden.]&gt; but was:&lt;Status [name=NOT_FOUND, description=The requested record was not found.]&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;Status [name=FORBIDDEN, description=The operation is forbidden.]&gt; but was:&lt;Status [name=NOT_FOUND, description=The requested record was not found.]&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
 	at org.junit.Assert.assertEquals(Assert.java:118)
@@ -493,48 +527,9 @@ INFO: Starting ProtocolHandler [&quot;http-nio-8082&quot;]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
   </testcase>
-  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="delete_404" time="0.002">
-    <failure message="expected:&lt;Status [name=NOT_FOUND, description=The requested record was not found.]&gt; but was:&lt;Status [name=OK, description=The operation completed successfully.]&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;Status [name=NOT_FOUND, description=The requested record was not found.]&gt; but was:&lt;Status [name=OK, description=The operation completed successfully.]&gt;
-	at org.junit.Assert.fail(Assert.java:88)
-	at org.junit.Assert.failNotEquals(Assert.java:834)
-	at org.junit.Assert.assertEquals(Assert.java:118)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at com.yahoo.ycsb.webservice.rest.RestClientTest.delete_404(RestClientTest.java:176)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</failure>
-  </testcase>
-  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="delete_500" time="0.002">
-    <failure message="expected:&lt;Status [name=ERROR, description=The operation failed.]&gt; but was:&lt;Status [name=OK, description=The operation completed successfully.]&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;Status [name=ERROR, description=The operation failed.]&gt; but was:&lt;Status [name=OK, description=The operation completed successfully.]&gt;
+  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="delete_404" time="0.013"/>
+  <testcase classname="com.yahoo.ycsb.webservice.rest.RestClientTest" name="delete_500" time="0.022">
+    <failure message="expected:&lt;Status [name=ERROR, description=The operation failed.]&gt; but was:&lt;Status [name=NOT_FOUND, description=The requested record was not found.]&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;Status [name=ERROR, description=The operation failed.]&gt; but was:&lt;Status [name=NOT_FOUND, description=The requested record was not found.]&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
 	at org.junit.Assert.assertEquals(Assert.java:118)

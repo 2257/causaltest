@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="41" failures="0" name="TestSuite" time="0.773" errors="0" skipped="0">
+<testsuite tests="42" failures="0" name="TestSuite" time="1.017" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="sun.boot.library.path" value="/home/zhaole/jdk1.8.0_181/jre/lib/amd64"/>
-    <property name="java.vm.version" value="25.181-b13"/>
+    <property name="sun.boot.library.path" value="/home/zl/Documents/jdk1.8.0_211/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.211-b12"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="/home/zhaole/causaltest"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/zl/Documents/causaltest"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -15,91 +15,92 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/home/zhaole/causaltest"/>
-    <property name="java.runtime.version" value="1.8.0_181-b13"/>
+    <property name="user.dir" value="/home/zl/Documents/causaltest"/>
+    <property name="java.runtime.version" value="1.8.0_211-b12"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
-    <property name="java.endorsed.dirs" value="/home/zhaole/jdk1.8.0_181/jre/lib/endorsed"/>
+    <property name="java.endorsed.dirs" value="/home/zl/Documents/jdk1.8.0_211/jre/lib/endorsed"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.io.tmpdir" value="/tmp"/>
     <property name="line.separator" value="
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Linux"/>
-    <property name="classworlds.conf" value="/home/zhaole/apache-maven-3.5.4/bin/m2.conf"/>
+    <property name="classworlds.conf" value="/home/zl/Documents/idea-IU-191.7479.19/plugins/maven/lib/maven3/bin/m2.conf"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.library.path" value="/data/zhaole/pgxl/lib:/home/zhaole/opensslprefix/lib:/data/zhaole/pgxl/lib:/home/zhaole/opensslprefix/lib::/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
-    <property name="maven.conf" value="/home/zhaole/apache-maven-3.5.4/conf"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="3.10.0-693.2.2.el7.x86_64"/>
-    <property name="library.jansi.path" value="/home/zhaole/apache-maven-3.5.4/lib/jansi-native"/>
-    <property name="user.home" value="/home/zhaole"/>
-    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="os.version" value="3.10.0-514.el7.x86_64"/>
+    <property name="user.home" value="/home/zl"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
     <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
-    <property name="java.specification.version" value="1.8"/>
     <property name="file.encoding" value="UTF-8"/>
-    <property name="user.name" value="zhaole"/>
-    <property name="java.class.path" value="/home/zhaole/apache-maven-3.5.4/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="user.name" value="zl"/>
+    <property name="java.class.path" value="/home/zl/Documents/idea-IU-191.7479.19/plugins/maven/lib/maven3/boot/plexus-classworlds-2.5.2.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="java.home" value="/home/zhaole/jdk1.8.0_181/jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher package"/>
+    <property name="java.home" value="/home/zl/Documents/jdk1.8.0_211/jre"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version2019.1.3 clean install"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="idea.version2019.1.3" value="true"/>
     <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.version" value="1.8.0_181"/>
-    <property name="java.ext.dirs" value="/home/zhaole/jdk1.8.0_181/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="java.version" value="1.8.0_211"/>
+    <property name="java.ext.dirs" value="/home/zl/Documents/jdk1.8.0_211/jre/lib/ext:/usr/java/packages/lib/ext"/>
     <property name="securerandom.source" value="file:/dev/./urandom"/>
-    <property name="sun.boot.class.path" value="/home/zhaole/jdk1.8.0_181/jre/lib/resources.jar:/home/zhaole/jdk1.8.0_181/jre/lib/rt.jar:/home/zhaole/jdk1.8.0_181/jre/lib/sunrsasign.jar:/home/zhaole/jdk1.8.0_181/jre/lib/jsse.jar:/home/zhaole/jdk1.8.0_181/jre/lib/jce.jar:/home/zhaole/jdk1.8.0_181/jre/lib/charsets.jar:/home/zhaole/jdk1.8.0_181/jre/lib/jfr.jar:/home/zhaole/jdk1.8.0_181/jre/classes"/>
+    <property name="sun.boot.class.path" value="/home/zl/Documents/jdk1.8.0_211/jre/lib/resources.jar:/home/zl/Documents/jdk1.8.0_211/jre/lib/rt.jar:/home/zl/Documents/jdk1.8.0_211/jre/lib/sunrsasign.jar:/home/zl/Documents/jdk1.8.0_211/jre/lib/jsse.jar:/home/zl/Documents/jdk1.8.0_211/jre/lib/jce.jar:/home/zl/Documents/jdk1.8.0_211/jre/lib/charsets.jar:/home/zl/Documents/jdk1.8.0_211/jre/lib/jfr.jar:/home/zl/Documents/jdk1.8.0_211/jre/classes"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="/home/zhaole/apache-maven-3.5.4"/>
+    <property name="maven.home" value="/home/zl/Documents/idea-IU-191.7479.19/plugins/maven/lib/maven3"/>
     <property name="file.separator" value="/"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.yahoo.ycsb.TestByteIterator" name="testRandomByteIterator" time="0.007"/>
+  <testcase classname="com.yahoo.ycsb.TestByteIterator" name="testRandomByteIterator" time="0.035"/>
   <testcase classname="com.yahoo.ycsb.TestNumericByteIterator" name="testDouble" time="0"/>
   <testcase classname="com.yahoo.ycsb.TestNumericByteIterator" name="testLong" time="0"/>
-  <testcase classname="com.yahoo.ycsb.TestStatus" name="testAcceptableStatus" time="0.002"/>
+  <testcase classname="com.yahoo.ycsb.TestStatus" name="testAcceptableStatus" time="0"/>
   <testcase classname="com.yahoo.ycsb.TestUtils" name="bytesToDoubleTooShort" time="0"/>
   <testcase classname="com.yahoo.ycsb.TestUtils" name="bytesToFromDouble" time="0"/>
   <testcase classname="com.yahoo.ycsb.TestUtils" name="bytesToFromLong" time="0"/>
   <testcase classname="com.yahoo.ycsb.TestUtils" name="bytesToLongNull" time="0"/>
   <testcase classname="com.yahoo.ycsb.TestUtils" name="bytesToLongTooShort" time="0"/>
-  <testcase classname="com.yahoo.ycsb.TestUtils" name="jvmUtils" time="0.002"/>
-  <testcase classname="com.yahoo.ycsb.generator.AcknowledgedCounterGeneratorTest" name="testIncrementPastIntegerMaxValue" time="0.55"/>
-  <testcase classname="com.yahoo.ycsb.generator.TestIncrementingPrintableStringGenerator" name="invalidCharacterSets" time="0.001"/>
+  <testcase classname="com.yahoo.ycsb.TestUtils" name="jvmUtils" time="0.143"/>
+  <testcase classname="com.yahoo.ycsb.generator.AcknowledgedCounterGeneratorTest" name="testIncrementPastIntegerMaxValue" time="0.338"/>
+  <testcase classname="com.yahoo.ycsb.generator.TestIncrementingPrintableStringGenerator" name="invalidCharacterSets" time="0"/>
   <testcase classname="com.yahoo.ycsb.generator.TestIncrementingPrintableStringGenerator" name="invalidLengths" time="0"/>
   <testcase classname="com.yahoo.ycsb.generator.TestIncrementingPrintableStringGenerator" name="rolloverException" time="0"/>
-  <testcase classname="com.yahoo.ycsb.generator.TestIncrementingPrintableStringGenerator" name="rolloverOK" time="0.001"/>
+  <testcase classname="com.yahoo.ycsb.generator.TestIncrementingPrintableStringGenerator" name="rolloverOK" time="0"/>
   <testcase classname="com.yahoo.ycsb.generator.TestIncrementingPrintableStringGenerator" name="rolloverOneCharacterException" time="0"/>
   <testcase classname="com.yahoo.ycsb.generator.TestIncrementingPrintableStringGenerator" name="rolloverOneCharacterOK" time="0"/>
-  <testcase classname="com.yahoo.ycsb.generator.TestRandomDiscreteTimestampGenerator" name="systemTime" time="0.001"/>
-  <testcase classname="com.yahoo.ycsb.generator.TestRandomDiscreteTimestampGenerator" name="tooLarge" time="0.014"/>
-  <testcase classname="com.yahoo.ycsb.generator.TestRandomDiscreteTimestampGenerator" name="withStartTime" time="0.001"/>
+  <testcase classname="com.yahoo.ycsb.generator.TestRandomDiscreteTimestampGenerator" name="systemTime" time="0"/>
+  <testcase classname="com.yahoo.ycsb.generator.TestRandomDiscreteTimestampGenerator" name="tooLarge" time="0.044"/>
+  <testcase classname="com.yahoo.ycsb.generator.TestRandomDiscreteTimestampGenerator" name="withStartTime" time="0"/>
   <testcase classname="com.yahoo.ycsb.generator.TestUnixEpochTimestampGenerator" name="ctorWithIntervalAndUnits" time="0"/>
   <testcase classname="com.yahoo.ycsb.generator.TestUnixEpochTimestampGenerator" name="ctorWithIntervalAndUnitsAndStart" time="0"/>
   <testcase classname="com.yahoo.ycsb.generator.TestUnixEpochTimestampGenerator" name="defaultCtor" time="0"/>
-  <testcase classname="com.yahoo.ycsb.generator.TestUnixEpochTimestampGenerator" name="variousIntervalsAndUnits" time="0.001"/>
-  <testcase classname="com.yahoo.ycsb.generator.TestZipfianGenerator" name="testMinAndMaxParameter" time="0.005"/>
-  <testcase classname="com.yahoo.ycsb.measurements.exporter.TestMeasurementsExporter" name="testJSONArrayMeasurementsExporter" time="0.163"/>
-  <testcase classname="com.yahoo.ycsb.workloads.TestCoreWorkload" name="createOperationChooser" time="0.003"/>
-  <testcase classname="com.yahoo.ycsb.workloads.TestCoreWorkload" name="createOperationChooserNullProperties" time="0.001"/>
-  <testcase classname="com.yahoo.ycsb.workloads.TestTimeSeriesWorkload" name="badTimeUnit" time="0.001"/>
-  <testcase classname="com.yahoo.ycsb.workloads.TestTimeSeriesWorkload" name="failedToInitThread" time="0.001"/>
+  <testcase classname="com.yahoo.ycsb.generator.TestUnixEpochTimestampGenerator" name="variousIntervalsAndUnits" time="0"/>
+  <testcase classname="com.yahoo.ycsb.generator.TestZipfianGenerator" name="testMinAndMaxParameter" time="0.017"/>
+  <testcase classname="com.yahoo.ycsb.measurements.exporter.TestMeasurementsExporter" name="testJSONArrayMeasurementsExporter" time="0.362"/>
+  <testcase classname="com.yahoo.ycsb.workloads.TestCoreWorkload" name="createOperationChooser" time="0.009"/>
+  <testcase classname="com.yahoo.ycsb.workloads.TestCoreWorkload" name="createOperationChooserNullProperties" time="0"/>
+  <testcase classname="com.yahoo.ycsb.workloads.TestCoreWorkload" name="testCassandraTwitterRYW" time="0"/>
+  <testcase classname="com.yahoo.ycsb.workloads.TestTimeSeriesWorkload" name="badTimeUnit" time="0"/>
+  <testcase classname="com.yahoo.ycsb.workloads.TestTimeSeriesWorkload" name="failedToInitThread" time="0"/>
   <testcase classname="com.yahoo.ycsb.workloads.TestTimeSeriesWorkload" name="failedToInitWorkloadBeforeThreadInit" time="0"/>
-  <testcase classname="com.yahoo.ycsb.workloads.TestTimeSeriesWorkload" name="insertOneKeyOneTagCardinalityOne" time="0.003"/>
-  <testcase classname="com.yahoo.ycsb.workloads.TestTimeSeriesWorkload" name="insertOneKeyTwoTagsLowCardinality" time="0.001"/>
-  <testcase classname="com.yahoo.ycsb.workloads.TestTimeSeriesWorkload" name="insertThreeKeysTwoThreads" time="0.001"/>
-  <testcase classname="com.yahoo.ycsb.workloads.TestTimeSeriesWorkload" name="insertTwoKeysTwoTagsLowCardinality" time="0"/>
-  <testcase classname="com.yahoo.ycsb.workloads.TestTimeSeriesWorkload" name="insertTwoKeysTwoThreads" time="0.002"/>
-  <testcase classname="com.yahoo.ycsb.workloads.TestTimeSeriesWorkload" name="insertWithValidation" time="0.002"/>
+  <testcase classname="com.yahoo.ycsb.workloads.TestTimeSeriesWorkload" name="insertOneKeyOneTagCardinalityOne" time="0.028"/>
+  <testcase classname="com.yahoo.ycsb.workloads.TestTimeSeriesWorkload" name="insertOneKeyTwoTagsLowCardinality" time="0"/>
+  <testcase classname="com.yahoo.ycsb.workloads.TestTimeSeriesWorkload" name="insertThreeKeysTwoThreads" time="0"/>
+  <testcase classname="com.yahoo.ycsb.workloads.TestTimeSeriesWorkload" name="insertTwoKeysTwoTagsLowCardinality" time="0.018"/>
+  <testcase classname="com.yahoo.ycsb.workloads.TestTimeSeriesWorkload" name="insertTwoKeysTwoThreads" time="0"/>
+  <testcase classname="com.yahoo.ycsb.workloads.TestTimeSeriesWorkload" name="insertWithValidation" time="0.007"/>
   <testcase classname="com.yahoo.ycsb.workloads.TestTimeSeriesWorkload" name="read" time="0"/>
   <testcase classname="com.yahoo.ycsb.workloads.TestTimeSeriesWorkload" name="twoThreads" time="0"/>
-  <testcase classname="com.yahoo.ycsb.workloads.TestTimeSeriesWorkload" name="validateSettingsDataIntegrity" time="0.001"/>
-  <testcase classname="com.yahoo.ycsb.workloads.TestTimeSeriesWorkload" name="verifyRow" time="0.009"/>
+  <testcase classname="com.yahoo.ycsb.workloads.TestTimeSeriesWorkload" name="validateSettingsDataIntegrity" time="0"/>
+  <testcase classname="com.yahoo.ycsb.workloads.TestTimeSeriesWorkload" name="verifyRow" time="0.016"/>
 </testsuite>
