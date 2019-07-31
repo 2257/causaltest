@@ -38,7 +38,7 @@ public class AtlasOp implements Operation
     private static String privateIP3 = "privateIP3";
     private static String database = "sample_supplies";
     private static String port = "mongodb_port";
-
+//curl -i -u "zhaole:ngfuizbm" --digest "https://cloud.mongodb.com/api/atlas/v1.0/groups/0/clusters/caulsaltest/fts/indexes/sample_mflix/comments"
     //publickey = ngfuizbm
     //privatekey = dc01c794-cd52-4d55-9c5c-da179ea58bc3
     @Override
