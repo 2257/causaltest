@@ -16,7 +16,7 @@ import java.io.PrintWriter;
 import java.util.HashSet;
 import java.util.Set;
 
-@WebServlet(name = "RedisService",urlPatterns = "/redis")
+@WebServlet(name = "RedisService",urlPatterns = "/Redis")
 public class RedisService extends HttpServlet
 {
     @Override

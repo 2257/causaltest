@@ -36,7 +36,9 @@ public class AtlasOp implements Operation
     private static String privateIP1 = "privateIP1";
     private static String privateIP2 = "privateIP2";
     private static String privateIP3 = "privateIP3";
-    private static String database = "sample_supplies";
+    private static String database = "mongo_database";
+    private static String atlasName = "atlasName";
+    private static String atlasPassword = "atlasPassword";
     private static String port = "mongodb_port";
 //curl -i -u "zhaole:ngfuizbm" --digest "https://cloud.mongodb.com/api/atlas/v1.0/groups/0/clusters/caulsaltest/fts/indexes/sample_mflix/comments"
     //publickey = ngfuizbm
@@ -90,8 +92,10 @@ public class AtlasOp implements Operation
             mongoClient2 = new MongoClient(addresses);*/
 
             MongoClientURI uri = new MongoClientURI(
-                    "mongodb+srv://zhaole:13061076zl.@causaltest-ocqgv.mongodb.net/test?retryWrites=true&w=majority");
-            mongoClient = new MongoClient(uri);
+                //    "mongodb+srv://"+atlasName+":"+atlasPassword+"@causaltest-ocqgv.mongodb.net/test?retryWrites=true&w=majority");
+                "mongodb://"+atlasName+":"+atlasPassword+"@caulsaltest-shard-00-00-ocqgv.mongodb.net:27017,caulsaltest-shard-00-01-ocqgv.mongodb.net:27017,caulsaltest-shard-00-02-ocqgv.mongodb.net:27017/test?ssl=true&replicaSet=caulsaltest-shard-0&authSource=admin&retryWrites=true&w=majority"
+            );
+                    mongoClient = new MongoClient(uri);
             mongoClient2 = new MongoClient(uri);
 
 
@@ -130,12 +134,25 @@ public class AtlasOp implements Operation
             mongoClient2 = null;
         }
     }
+
+    /*public static void main(String[] args) {
+        MongoClientURI uri = new MongoClientURI(
+                "mongodb+srv://"+atlasName+":"+atlasPassword+"@causaltest-ocqgv.mongodb.net/test?retryWrites=true&w=majority");
+        mongoClient = new MongoClient(uri);
+        db = mongoClient.getDatabase(properties.getProperty(database))
+                .withWriteConcern(WriteConcern.W1)
+                .withReadConcern(ReadConcern.DEFAULT);
+        System.out.println(db.listCollectionNames().into(new ArrayList<String>()).contains("twitterusertable"));
+        mongoClient.close();
+        db = null;
+        mongoClient = null;
+    }*/
     public  String createTable(String tableName)
     {
 
-        if(tableName.equals("twitterusertable"))
+       /* if(tableName.equals("twitterusertable"))
         {
-            System.out.println("mongodb createtable "+db.getName());
+            //System.out.println("mongodb createtable "+db.getName());
             if(db.listCollectionNames().into(new ArrayList<String>()).contains(tableName)==false)
             {
                 db.createCollection(tableName);
@@ -163,12 +180,12 @@ public class AtlasOp implements Operation
             }
         }
         if(tableName.equals("amazoncarttable"))
-        {
+        {*/
             if(db.listCollectionNames().into(new ArrayList<String>()).contains(tableName)==false)
             {
                 db.createCollection(tableName);
             }
-        }
+        //}
         System.out.println("create mongo table(collection ) successfully");
         return "mongo creatTable complete";
     }

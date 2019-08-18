@@ -22,7 +22,7 @@ $CATALINA_HOME/bin/startup.sh
 echo -e "\033[4;32m [$(date +'%F %T')] >>> [Tomcat restart complete.] \033[0m"
 #sleep 1
 #step 4 , build maven
-cd $script_dir/causalwebserver
+cd $script_dir/../causalwebserver
 mvn clean
 mvn install
 mvn tomcat7:deploy

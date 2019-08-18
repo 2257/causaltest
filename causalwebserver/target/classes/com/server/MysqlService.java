@@ -15,7 +15,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.HashSet;
 import java.util.Set;
-@WebServlet(name = "MysqlService",urlPatterns = "/mysql")
+@WebServlet(name = "MysqlService",urlPatterns = "/Mysql")
 
 public class MysqlService extends HttpServlet
 {

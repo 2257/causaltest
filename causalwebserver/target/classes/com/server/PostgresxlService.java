@@ -15,7 +15,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.HashSet;
 import java.util.Set;
-@WebServlet(name = "PostgresxlService",urlPatterns = "/postgresxl")
+@WebServlet(name = "PostgresxlService",urlPatterns = "/Postgresxl")
 
 public class PostgresxlService extends HttpServlet
 {

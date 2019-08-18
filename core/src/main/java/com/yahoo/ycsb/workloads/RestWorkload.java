@@ -188,7 +188,7 @@ db = p.getProperty(DB_PROPERTY,"cassandra");
 
         String instanceName = db+website+consistency;
         try {
-            Class instance = Class.forName("com.yahoo.ycsb.workloads.dbinstance."+db+instanceName);
+            Class instance = Class.forName("com.yahoo.ycsb.workloads.dbinstance."+db+"."+instanceName);
             Object obj = instance.newInstance();
             Method[] methods = instance.getMethods();
            // System.out.println("getMethods获取的方法：");

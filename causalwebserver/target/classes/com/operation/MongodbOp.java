@@ -36,7 +36,7 @@ public class MongodbOp implements Operation
     private static String privateIP1 = "privateIP1";
     private static String privateIP2 = "privateIP2";
     private static String privateIP3 = "privateIP3";
-    private static String database = "mongodb_database";
+    private static String database = "sample_supplies";
 	private static String port = "mongodb_port";
 
     @Override
@@ -87,6 +87,13 @@ public class MongodbOp implements Operation
             mongoClient = new MongoClient(addresses);
             mongoClient2 = new MongoClient(addresses);
 
+           /* MongoClientURI uri = new MongoClientURI(
+                    "mongodb+srv://zhaole:13061076zl.@causaltest-ocqgv.mongodb.net/test?retryWrites=true&w=majority");
+            mongoClient = new MongoClient(uri);
+            mongoClient2 = new MongoClient(uri);*/
+
+
+
             db = mongoClient.getDatabase(properties.getProperty(database))
                     .withWriteConcern(wc)
                     .withReadConcern(rc);
@@ -95,7 +102,7 @@ public class MongodbOp implements Operation
                      .withReadConcern(rc);
              //db.createCollection("xxxtable");
 
-            System.out.println("Connect to database successfully");
+            System.out.println("Connect to database successfully"+db.getName());
 
         }catch(Exception e){
             System.err.println( e.getClass().getName() + ": " + e.getMessage() );
@@ -126,6 +133,7 @@ public class MongodbOp implements Operation
 
         if(tableName.equals("twitterusertable"))
         {
+            System.out.println("mongodb createtable "+db.getName());
             if(db.listCollectionNames().into(new ArrayList<String>()).contains(tableName)==false)
             {
                 db.createCollection(tableName);

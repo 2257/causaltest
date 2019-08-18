@@ -19,7 +19,7 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-@WebServlet(name = "CassandraService",urlPatterns = "/cassandra")
+@WebServlet(name = "CassandraService",urlPatterns = "/Cassandra")
 public class CassandraService extends HttpServlet
 {
 

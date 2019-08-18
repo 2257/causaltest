@@ -15,7 +15,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.HashSet;
 import java.util.Set;
-@WebServlet(name = "MongodbService",urlPatterns = "/mongodb")
+@WebServlet(name = "MongodbService",urlPatterns = "/Mongodb")
 public class MongodbService extends HttpServlet
 {
 @Override

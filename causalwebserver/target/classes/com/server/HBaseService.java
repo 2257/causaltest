@@ -13,7 +13,7 @@ import java.io.PrintWriter;
 import java.util.HashSet;
 import java.util.Set;
 
-@WebServlet(name = "HbaseService",urlPatterns = "/hbase")
+@WebServlet(name = "HbaseService",urlPatterns = "/Hbase")
 public class HBaseService extends HttpServlet
 {
   @Override
