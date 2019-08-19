@@ -31,7 +31,7 @@ public class MysqlTwitterWFR extends TwitterWFR
     }
     public String read2()
     {
-        return "?type=read2&key="+user+"&pk=liketweet&tableName=twitterusertable";
+        return "?type=read2&key="+user+"&col=liketweet&tableName=twitterusertable";
     }
     public String insert()
     {
