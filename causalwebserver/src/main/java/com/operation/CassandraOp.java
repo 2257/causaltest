@@ -57,9 +57,9 @@ public class CassandraOp implements Operation
     ip3 = properties.getProperty(privateIP3);
     AddressTranslate at = new AddressTranslate();
     ///at.translate(new InetSocketAddress("39.104.154.79", 9042));
-    System.out.println(ip1);
+   // System.out.println(ip1);
     String[] hosts = new String[]{ip1,ip2,ip3};
-    System.out.println(hosts);
+   // System.out.println(hosts);
     /// String[] hosts = new String[]{"172.24.83.25","172.24.83.27","172.24.83.26"};
     cluster = Cluster.builder()
         .addContactPoints(hosts)
@@ -170,7 +170,7 @@ properties.load(new FileInputStream("src/main/resources/conf.properties"));
 
     } catch (Exception e) {
       e.printStackTrace();
-      System.out.println("Error reading key: " + key);
+      System.out.println("Error reading key: " + key+","+e.getMessage());
       // cleanup();
       return "readerror";
     }
@@ -219,7 +219,7 @@ properties.load(new FileInputStream("src/main/resources/conf.properties"));
     } catch (Exception e) {
 
       e.printStackTrace();
-      System.out.println("Error reading key: " + key);
+      System.out.println("Error reading key: " + key+","+e.getMessage());
       //cleanup();
       return "readerror";
     }
@@ -234,7 +234,7 @@ properties.load(new FileInputStream("src/main/resources/conf.properties"));
   {
 	properties.load(new FileInputStream("src/main/resources/conf.properties"));  
 	  ConsistencyLevel writeConsistencyLevel = ConsistencyLevel.ONE;
-    System.out.println("zhaoleinsert:"+properties.getProperty(writeConsistencyLevelValue));
+   // System.out.println("zhaoleinsert:"+properties.getProperty(writeConsistencyLevelValue));
 
 	writeConsistencyLevel = ConsistencyLevel.valueOf(properties.getProperty(writeConsistencyLevelValue));
     try{
@@ -247,7 +247,7 @@ properties.load(new FileInputStream("src/main/resources/conf.properties"));
       Insert insertStmt = QueryBuilder.insertInto(table);
       insertStmt.value(KEYROW, key);
       insertStmt.value(col,val);
-      System.out.println("insert val = "+val);
+     // System.out.println("insert val = "+val);
       insertStmt.setConsistencyLevel(writeConsistencyLevel);
       if(clientFlag == 1)
       {
@@ -260,7 +260,7 @@ properties.load(new FileInputStream("src/main/resources/conf.properties"));
 
     }catch (Exception e) {
       e.printStackTrace();
-      System.out.println("error insert c*");
+      System.out.println("error insert c*"+e.getMessage());
     }
     long en = System.currentTimeMillis() - st;
     return "cassandra insert complete";
@@ -281,12 +281,12 @@ properties.load(new FileInputStream("src/main/resources/conf.properties"));
       insertStmt.value(KEYROW, key);
       // Add fields
       insertStmt.value(col,val);
-      System.out.println("insert val = "+val);
+     // System.out.println("insert val = "+val);
       insertStmt.setConsistencyLevel(writeConsistencyLevel);
       session.execute(insertStmt);
     }catch (Exception e) {
       e.printStackTrace();
-      System.out.println("error insert c*");
+      System.out.println("error insert c*"+e.getMessage());
     }
     long en = System.currentTimeMillis() - st;
     return "cassandra insert complete";

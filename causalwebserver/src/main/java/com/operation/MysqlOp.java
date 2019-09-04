@@ -36,9 +36,9 @@ public class MysqlOp implements Operation
     public String init()throws IOException
     {
 	properties.load(new FileInputStream("src/main/resources/conf.properties"));
-      String url = "jdbc:mysql:replication://"+properties.getProperty(privateIP2)+":3306,"+properties.getProperty(privateIP3)
-                      +":3306/"+properties.getProperty(database)+"?roundRobinLoadBalance=true&serverTimezone=CST";
-//     String url = "jdbc:mysql:replication://172.24.83.27:3306,172.24.83.26:3306/test27?roundRobinLoadBalance=true&serverTimezone=CST"; 
+     // String url = "jdbc:mysql:replication://"+properties.getProperty(privateIP2)+":3306,"+properties.getProperty(privateIP3)
+      //                +":3306/"+properties.getProperty(database)+"?roundRobinLoadBalance=true&serverTimezone=CST";
+     String url = "jdbc:mysql:replication://dcdbt-rybx6lec.sql.tencentcdb.com:32/causaltest?roundRobinLoadBalance=true&serverTimezone=CST";
 	 String resp = ""; 
 	 try{
             Class.forName(DRIVE);
@@ -48,9 +48,9 @@ public class MysqlOp implements Operation
             conn2 = DriverManager.getConnection(url,properties.getProperty(user),properties.getProperty(password));
             conn2.setReadOnly(false);
 		/////zhaole////
-		Statement stmt = conn1.createStatement();
-		stmt.executeQuery("show databases");
-		stmt.close();
+		//Statement stmt = conn1.createStatement();
+		//stmt.executeQuery("show databases");
+		//stmt.close();
         }catch(SQLException se)
         {
             se.printStackTrace();
@@ -66,9 +66,9 @@ public class MysqlOp implements Operation
             sql = "CREATE TABLE IF NOT EXISTS twitterusertable (" +
                     "id VARCHAR(30),tweetid VARCHAR(30),liketweet VARCHAR(30)," +
                     "retweet VARCHAR(30),commenttweet VARCHAR(30),time VARCHAR(40)," +
-                    "PRIMARY KEY(id)) ENGINE=NDBCLUSTER DEFAULT CHARSET=utf8";
-
-            System.out.println("SQL="+sql);
+                  //  "PRIMARY KEY(id)) ENGINE=NDBCLUSTER DEFAULT CHARSET=utf8";
+                    "PRIMARY KEY(id))  CHARSET=utf8";
+         //   System.out.println("SQL="+sql);
         } else if (tableName.equals("amazoncommenttable"))
         {
             sql = "CREATE TABLE IF NOT EXISTS amazoncommenttable (" +
@@ -135,7 +135,7 @@ public class MysqlOp implements Operation
         {
             sql = "insert into "+tableName+" (id,"+col+") values ('"+id+"','"+val+"') " +
                     "ON DUPLICATE KEY UPDATE "+col+" = '"+val+"'";
-            System.out.println("insert="+sql);
+           // System.out.println("insert="+sql);
             if(clientFlag ==1 )
             {
               stmt = conn1.createStatement();
@@ -160,7 +160,7 @@ public class MysqlOp implements Operation
         {
             sql = "insert into "+tableName+" (id,"+col+") values ('"+id+"','"+val+"') " +
                     "ON DUPLICATE KEY UPDATE "+col+" = '"+val+"'";
-            System.out.println("insert="+sql);
+           // System.out.println("insert="+sql);
             stmt = conn2.createStatement();
             stmt.executeUpdate(sql);
             stmt.close();
@@ -196,7 +196,7 @@ public class MysqlOp implements Operation
 
           }
 
-            System.out.println("read="+sql);
+          //  System.out.println("read="+sql);
             ResultSet rs = stmt.executeQuery(sql);
             while (rs.next())
             {
