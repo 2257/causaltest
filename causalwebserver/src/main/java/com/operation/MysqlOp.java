@@ -36,9 +36,9 @@ public class MysqlOp implements Operation
     public String init()throws IOException
     {
 	properties.load(new FileInputStream("src/main/resources/conf.properties"));
-     // String url = "jdbc:mysql:replication://"+properties.getProperty(privateIP2)+":3306,"+properties.getProperty(privateIP3)
-      //                +":3306/"+properties.getProperty(database)+"?roundRobinLoadBalance=true&serverTimezone=CST";
-     String url = "jdbc:mysql:replication://dcdbt-rybx6lec.sql.tencentcdb.com:32/causaltest?roundRobinLoadBalance=true&serverTimezone=CST";
+      String url = "jdbc:mysql:replication://"+properties.getProperty(privateIP2)+":3306,"+properties.getProperty(privateIP3)
+                      +":3306/"+properties.getProperty(database)+"?roundRobinLoadBalance=true&serverTimezone=CST";
+    // String url = "jdbc:mysql:replication://dcdbt-rybx6lec.sql.tencentcdb.com:32/causaltest?roundRobinLoadBalance=true&serverTimezone=CST";
 	 String resp = ""; 
 	 try{
             Class.forName(DRIVE);

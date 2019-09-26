@@ -84,7 +84,7 @@ public class RestClient extends DB {
   public void init() throws DBException {
     props = getProperties();
 
-    urlPrefix = "http://127.0.0.1:8080/"+props.getProperty(urlDB_PROPERTY);
+    urlPrefix = "http://127.0.0.1:8081/"+props.getProperty(urlDB_PROPERTY);
    System.out.println("databasename="+props.getProperty(urlDB_PROPERTY));
 	 conTimeout = Integer.valueOf(props.getProperty(CON_TIMEOUT, "10"))*1000;//* 1000;
     readTimeout = Integer.valueOf(props.getProperty(READ_TIMEOUT, "10"))*1000 ;//* 1000;

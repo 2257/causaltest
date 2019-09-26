@@ -137,8 +137,10 @@ public class PostgresxlOp implements Operation
 
             stmt.executeUpdate(sql);
             stmt.close();
-        }catch (SQLException e){
+        }catch (Exception e){
             e.printStackTrace();
+            System.out.println("exception in Postgres insert:"+e.getMessage());
+
         }
         return "insert-pgsql\n";
     }
@@ -155,8 +157,10 @@ public class PostgresxlOp implements Operation
             stmt = conn2.createStatement();
             stmt.executeUpdate(sql);
             stmt.close();
-        }catch (SQLException e){
+        }catch (Exception e){
             e.printStackTrace();
+            System.out.println("exception in Postgres insert:"+e.getMessage());
+
         }
         return "insert-pgsql\n";
     }
@@ -189,8 +193,10 @@ public class PostgresxlOp implements Operation
                 r = rs.getString(col);
             }
             stmt.close();
-        }catch (SQLException e){
+        }catch (Exception e){
             e.printStackTrace();
+            System.out.println("exception in Postgres read:"+e.getMessage());
+
             return "readerror";
 
         }
@@ -212,8 +218,10 @@ public class PostgresxlOp implements Operation
                 r = rs.getString(col);
             }
             stmt.close();
-        }catch (SQLException e){
+        }catch (Exception e){
             e.printStackTrace();
+            System.out.println("exception in Postgres read:"+e.getMessage());
+
             return "readerror";
 
         }

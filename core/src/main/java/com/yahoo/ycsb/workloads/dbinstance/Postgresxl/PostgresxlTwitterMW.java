@@ -24,7 +24,7 @@ public class PostgresxlTwitterMW extends TwitterMW
     }
     public String createtable()
     {
-        return  "?type=createtable&tableName=twitterusertable";
+        return  "?type=createtable&tableName=twittermomenttable";
     }
     public String read()
     {
@@ -32,7 +32,7 @@ public class PostgresxlTwitterMW extends TwitterMW
     }
     public String insert()
     {
-        return "?type=insert&tableName=twitterusertable&id="+user+"&col=liketweet&val="+tweet+"&time="+
+        return "?type=insert&tableName=twittermomenttable&id="+user+"&col=liketweet&val="+tweet+"&time="+
                 (new SimpleDateFormat("yyyy/MM/dd-HH:mm:ss:SSS").format(System.currentTimeMillis()));
     }
     public String insert2()

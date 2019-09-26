@@ -43,6 +43,7 @@ public class CassandraOp implements Operation
   private static String keyspace = "cassandra_keyspace";
   private static final AtomicInteger INIT_COUNT = new AtomicInteger(0);
 
+
   @Override
   public  String init() throws IOException
   {
