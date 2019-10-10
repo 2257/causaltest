@@ -1,3 +1,6 @@
+time=$(date "+%Y-%m-%d %H:%M:%S")
+echo "${time}"
+
 ssh  zhaole@xuserver002 << remotessh
 ps -ef | grep coordinator | grep -v grep |awk '{print \$2}'|xargs  kill -9
 rm /data/zhaole/pgxl/data/nodes/dn_master/postmaster.pid

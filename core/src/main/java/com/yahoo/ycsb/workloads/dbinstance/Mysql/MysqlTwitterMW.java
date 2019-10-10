@@ -24,20 +24,20 @@ public class MysqlTwitterMW extends TwitterMW
     }
     public String createtable()
     {
-        return  "?type=createtable&tableName=twitterusertable";
+        return  "?type=createtable&tableName=twittermomenttable";
     }
     public String read()
     {
-        return "?type=read2&key="+moment+"&fields=content&tableName=twittermomenttable";
+        return "?type=read2&key="+moment+"&col=content&tableName=twittermomenttable";
     }
     public String insert()
     {
-        return "?type=insert&tableName=twitterusertable&id="+user+"&col=liketweet&val="+tweet+"&time="+
+        return "?type=insert&tableName=twittermomenttable&id="+moment+"&col=content&val="+content+"&time="+
                 (new SimpleDateFormat("yyyy/MM/dd-HH:mm:ss:SSS").format(System.currentTimeMillis()));
     }
     public String insert2()
     {
-        return "?type=insert&tableName=twittermomenttable&keyrow="+moment+"&col=content&val="+content2+"&time="+
+        return "?type=insert&tableName=twittermomenttable&id="+moment+"&col=content&val="+content2+"&time="+
                 (new SimpleDateFormat("yyyy/MM/dd-HH:mm:ss:SSS").format(System.currentTimeMillis()));
     }
     public String delete()

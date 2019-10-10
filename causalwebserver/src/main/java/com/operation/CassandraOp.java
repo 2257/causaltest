@@ -19,6 +19,7 @@ import com.datastax.driver.core.querybuilder.Select;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -47,6 +48,7 @@ public class CassandraOp implements Operation
   @Override
   public  String init() throws IOException
   {
+
     //InputStream in = Properties.class.getClassLoader().getResourceAsStream("src/main/resources/conf.properties");
    // 	properties.load(new FileInputStream("../../resources/conf.properties"));
    properties.load(new FileInputStream("src/main/resources/conf.properties"));
@@ -128,6 +130,8 @@ properties.load(new FileInputStream("src/main/resources/conf.properties"));
     String re="";
     ConsistencyLevel readConsistencyLevel = ConsistencyLevel.ONE;
 	readConsistencyLevel = ConsistencyLevel.valueOf(properties.getProperty(readConsistencyLevelValue));
+    SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
     try
     {
       Statement stmt ;
@@ -146,7 +150,7 @@ properties.load(new FileInputStream("src/main/resources/conf.properties"));
       table.replace("\"","");
       stmt = selectBuilder.from(table).where(QueryBuilder.eq("id", key)).limit(1);
       stmt.setConsistencyLevel(readConsistencyLevel);
-      ResultSet rs =  session.execute(stmt);;
+      ResultSet rs =  null;//session.execute(stmt);;
       if(clientFlag == 1)
       {
         rs = session.execute(stmt);
@@ -154,6 +158,13 @@ properties.load(new FileInputStream("src/main/resources/conf.properties"));
       else if(clientFlag == 2)
       {
         rs = session2.execute(stmt);
+      }
+      if(rs == null)
+      {
+        System.out.println(df.format(System.currentTimeMillis()));;
+        System.out.println("cassandra read resultSet is null");
+        // cleanup();
+        return "readerror";
       }
       Row row = rs.one();
 
@@ -170,8 +181,10 @@ properties.load(new FileInputStream("src/main/resources/conf.properties"));
       long en = System.currentTimeMillis() - st;
 
     } catch (Exception e) {
+      System.out.println(df.format(System.currentTimeMillis()));;
       e.printStackTrace();
       System.out.println("Error reading key: " + key+","+e.getMessage());
+
       // cleanup();
       return "readerror";
     }
@@ -184,6 +197,8 @@ properties.load(new FileInputStream("src/main/resources/conf.properties"));
     String re="";
     ConsistencyLevel readConsistencyLevel = ConsistencyLevel.ONE;
     readConsistencyLevel = ConsistencyLevel.valueOf(properties.getProperty(readConsistencyLevelValue));
+    SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
     try
     {
       Statement stmt ;
@@ -218,6 +233,7 @@ properties.load(new FileInputStream("src/main/resources/conf.properties"));
       }
 
     } catch (Exception e) {
+      System.out.println(df.format(System.currentTimeMillis()));;
 
       e.printStackTrace();
       System.out.println("Error reading key: " + key+","+e.getMessage());
@@ -238,6 +254,8 @@ properties.load(new FileInputStream("src/main/resources/conf.properties"));
    // System.out.println("zhaoleinsert:"+properties.getProperty(writeConsistencyLevelValue));
 
 	writeConsistencyLevel = ConsistencyLevel.valueOf(properties.getProperty(writeConsistencyLevelValue));
+    SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
     try{
       Thread.sleep(2);
     }catch (Exception e){
@@ -260,6 +278,8 @@ properties.load(new FileInputStream("src/main/resources/conf.properties"));
       }
 
     }catch (Exception e) {
+      System.out.println(df.format(System.currentTimeMillis()));;
+
       e.printStackTrace();
       System.out.println("error insert c*"+e.getMessage());
     }
@@ -270,6 +290,8 @@ properties.load(new FileInputStream("src/main/resources/conf.properties"));
   {
     ConsistencyLevel writeConsistencyLevel = ConsistencyLevel.ONE;
     writeConsistencyLevel = ConsistencyLevel.valueOf(properties.getProperty(writeConsistencyLevelValue));
+    SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
     try{
       Thread.sleep(2);
     }catch (Exception e){
@@ -286,6 +308,8 @@ properties.load(new FileInputStream("src/main/resources/conf.properties"));
       insertStmt.setConsistencyLevel(writeConsistencyLevel);
       session.execute(insertStmt);
     }catch (Exception e) {
+      System.out.println(df.format(System.currentTimeMillis()));;
+
       e.printStackTrace();
       System.out.println("error insert c*"+e.getMessage());
     }

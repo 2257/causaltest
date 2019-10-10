@@ -1,4 +1,7 @@
 #!/bin/bash
+time=$(date "+%Y-%m-%d %H:%M:%S")
+echo "${time}"
+
 ps -ef | grep 172.24.83.25:7002 | grep -v grep | awk '{print $2}' |xargs kill -9
 ssh -Tq zhaole@xuserver002 << remotessh
 ps -ef | grep 172.24.83.27:7004 | grep -v grep | awk '{print \$2}' |xargs kill -9

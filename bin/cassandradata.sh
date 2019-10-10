@@ -1,3 +1,6 @@
+time=$(date "+%Y-%m-%d %H:%M:%S")
+echo "${time}"
+
 ssh  zhaole@xuserver002 << remotessh
 ps -ef | grep cassandra | grep -v grep |awk '{print \$2}'|xargs  kill -9
 echo -e "\033[32m xuserver002 cassandra is stopped \033[0m"

@@ -37,7 +37,7 @@ public class MysqlOp implements Operation
     {
 	properties.load(new FileInputStream("src/main/resources/conf.properties"));
       String url = "jdbc:mysql:replication://"+properties.getProperty(privateIP2)+":3306,"+properties.getProperty(privateIP3)
-                      +":3306/"+properties.getProperty(database)+"?roundRobinLoadBalance=true&serverTimezone=CST";
+                      +":3306/"+properties.getProperty(database)+"?roundRobinLoadBalance=true&serverTimezone=CST&useSSL=false";
     // String url = "jdbc:mysql:replication://dcdbt-rybx6lec.sql.tencentcdb.com:32/causaltest?roundRobinLoadBalance=true&serverTimezone=CST";
 	 String resp = ""; 
 	 try{
@@ -94,7 +94,13 @@ public class MysqlOp implements Operation
                     "comment VARCHAR(30),question VARCHAR(30),time VARCHAR(40)," +
                     "PRIMARY KEY(id)) ENGINE=NDBCLUSTER DEFAULT CHARSET=utf8";
         }
-
+        else if(tableName.equals("twittermomenttable"))
+        {
+            sql = "CREATE TABLE IF NOT EXISTS twittermomenttable (" +
+                    "id VARCHAR(30),content VARCHAR(30),descri VARCHAR(30)," +
+                    "comment VARCHAR(30),time VARCHAR(40)," +
+                    "PRIMARY KEY(id)) ENGINE=NDBCLUSTER DEFAULT CHARSET=utf8";
+        }
         try
         {
             Statement stmt = conn1.createStatement();
