@@ -1,5 +1,10 @@
 package com.yahoo.ycsb.workloads;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import redis.clients.jedis.Jedis;
+import redis.clients.jedis.JedisPool;
+
 import java.text.SimpleDateFormat;
 import java.util.List;
 
@@ -15,15 +20,35 @@ public class ViolationChecker
     String content;
     String tweet;
     int loopStartIndex;
-    
-    
+    private static final Logger logger = LoggerFactory.getLogger(ViolationChecker.class);
+
+    private JedisPool pool;
+    public Jedis getJedis()
+    {
+        return pool.getResource();
+    }
     public ViolationChecker(String descri,String descri2,String content,String tweet)
     {
-        
+        pool = new JedisPool("redis://192.168.7.125:6379/10");
         this.descri2 = descri2;
         this.content = content;
         this.tweet = tweet;
         this.descri = descri;
+    }
+    public long sadd(String key, String value)
+    {
+        Jedis jedis = null;
+        try {
+            jedis = pool.getResource();
+            return jedis.sadd(key, value);
+        } catch (Exception e) {
+            logger.error("发生异常" + e.getMessage());
+        } finally {
+            if (jedis != null) {
+                jedis.close();
+            }
+        }
+        return 0;
     }
     public void printViolationInfo(int i,int num,int loop)
     {
@@ -31,8 +56,10 @@ public class ViolationChecker
         if(i==0)
         {
             //violation_size error
+            sadd("error",String.valueOf(num));
             System.out.println("[violate_size] num:"+num+",proportion:"+(float)num/loop+"---"+df.format(System.currentTimeMillis()));
         }else{
+            sadd("violation",String.valueOf(num));
             System.out.println("[violate] num:"+num+",proportion:"+(float)num/loop+"---"+df.format(System.currentTimeMillis()));
 
         }
