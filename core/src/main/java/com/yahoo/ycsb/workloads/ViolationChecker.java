@@ -35,12 +35,12 @@ public class ViolationChecker
         this.tweet = tweet;
         this.descri = descri;
     }
-    public long sadd(String key, String value)
+    public long incr(String key)
     {
         Jedis jedis = null;
         try {
             jedis = pool.getResource();
-            return jedis.sadd(key, value);
+            return jedis.incr(key);
         } catch (Exception e) {
             logger.error("发生异常" + e.getMessage());
         } finally {
@@ -56,10 +56,10 @@ public class ViolationChecker
         if(i==0)
         {
             //violation_size error
-            sadd("error",String.valueOf(num));
+            incr("exception");
             System.out.println("[violate_size] num:"+num+",proportion:"+(float)num/loop+"---"+df.format(System.currentTimeMillis()));
         }else{
-            sadd("violation",String.valueOf(num));
+            incr("violation");
             System.out.println("[violate] num:"+num+",proportion:"+(float)num/loop+"---"+df.format(System.currentTimeMillis()));
 
         }

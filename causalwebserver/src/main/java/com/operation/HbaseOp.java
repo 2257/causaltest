@@ -13,6 +13,7 @@ import org.apache.hadoop.hbase.util.Bytes;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.*;
 
 public class HbaseOp implements Operation
@@ -91,6 +92,8 @@ properties.load(new FileInputStream("src/main/resources/conf.properties"));
     {
 properties.load(new FileInputStream("src/main/resources/conf.properties"));
       String r=",,";
+        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
         try{
           if(clientFlag == 1)
           {
@@ -121,13 +124,17 @@ properties.load(new FileInputStream("src/main/resources/conf.properties"));
             }
         }catch (Exception e)
         {
-				e.printStackTrace();
+            System.out.println(df.format(System.currentTimeMillis()));;
+            e.printStackTrace();
+            System.out.println("Error reading key: " + key+","+e.getMessage());
             return "readerror";
         }
         return r;
     }
     public static String read2(String tableName, String key, Set<String> fields) throws IOException
     {
+        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
         String r="";
         try{
             t = connection2.getTable(TableName.valueOf(tableName));
@@ -150,26 +157,43 @@ properties.load(new FileInputStream("src/main/resources/conf.properties"));
             }
         }catch (Exception e)
         {
+            System.out.println(df.format(System.currentTimeMillis()));;
+            e.printStackTrace();
+            System.out.println("Error reading key: " + key+","+e.getMessage());
             return "readerror";
+
         }
 
         return r;
     }
     @Override
-    public  String insert(String table, String KEYROW,String key, String col, String val,int clientFlag) throws IOException
+    public  String insert(String table, String KEYROW,String key, String col, String val,int clientFlag)
     {
-      if(clientFlag == 1)
-      {
-        t = connection.getTable(TableName.valueOf(table));
-      }else{
-        t = connection2.getTable(TableName.valueOf(table));
-      }
+        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
-        Put put = new Put(Bytes.toBytes(KEYROW));
-        put.addColumn( Bytes.toBytes(col),null, Bytes.toBytes(val));
-        t.put(put);
-        t.close();
-        return "hbase insert complete";
+        try
+        {
+            if(clientFlag == 1)
+            {
+                t = connection.getTable(TableName.valueOf(table));
+            }else{
+                t = connection2.getTable(TableName.valueOf(table));
+            }
+
+            Put put = new Put(Bytes.toBytes(KEYROW));
+            put.addColumn( Bytes.toBytes(col),null, Bytes.toBytes(val));
+            t.put(put);
+            t.close();
+            return "hbase insert complete";
+        }catch (Exception e)
+        {
+            System.out.println(df.format(System.currentTimeMillis()));;
+            e.printStackTrace();
+            System.out.println("Error reading key: " + key+","+e.getMessage());
+            return "readerror";
+
+        }
+
     }
     public static String insert2(String table, String KEYROW, String key, String colFamily, String col, String val) throws IOException
     {
