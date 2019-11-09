@@ -192,13 +192,16 @@ db = p.getProperty(DB_PROPERTY,"cassandra");
             Object obj = instance.newInstance();
             Method[] methods = instance.getMethods();
            // System.out.println("getMethods获取的方法：");
-            Field fieldRequest = instance.getField("request");
+            Field fieldRequest = instance.getDeclaredField("request");
             Field fieldTypeid = instance.getDeclaredField("typid");
             Field fieldloopStartIndex = instance.getDeclaredField("loopStartIndex");
-            Field fieldtweet = instance.getField("tweet");
-            Field fielddescri = instance.getField("descri");
-            Field fielddescri2 = instance.getField("descri2");
-            Field fieldcontent = instance.getField("content");
+            Field fieldtweet = instance.getDeclaredField("tweet");
+            Field fielddescri = instance.getDeclaredField("descri");
+            Field fielddescri2 = instance.getDeclaredField("descri2");
+            Field fieldcontent = instance.getDeclaredField("content");
+            Field commodity = instance.getDeclaredField("commodity");
+            Field question = instance.getDeclaredField("question");
+
 
             fieldtweet.setAccessible(true);
             fieldloopStartIndex.setAccessible(true);

@@ -7,6 +7,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public abstract class AmazonMR implements MonotonicRead {
+    public String tweet;
+
     public String commodity;
     public String descri;
     public String descri2;

@@ -14,6 +14,9 @@ public abstract class TwitterRYW implements ReadYourWrite
     public String descri;
     public String descri2;
     public String content;
+    public String commodity;
+    public String question;
+
     public List<String> request = new ArrayList<>();
 
     public TwitterRYW()
