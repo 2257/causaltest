@@ -15,10 +15,14 @@ public abstract class TwitterMW implements MonotonicWrite {
     public String descri;
     public String descri2;
     public String content2;
+    public String commodity;
+    public String question;
     public List<String> request = new ArrayList<>();
 
     public TwitterMW()
     {
+        commodity = "";
+        question = "";
         user = RandomStringUtils.randomNumeric(19);
         tweet = RandomStringUtils.randomNumeric(19);
         tweet2 = RandomStringUtils.randomNumeric(19);

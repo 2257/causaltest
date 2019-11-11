@@ -21,10 +21,13 @@ public abstract class AmazonMR implements MonotonicRead {
         commodity = RandomStringUtils.randomAlphanumeric(10).toLowerCase();
         descri = RandomStringUtils.randomAlphanumeric(10).toLowerCase();
         descri2 = RandomStringUtils.randomAlphanumeric(10).toLowerCase();
+        tweet = RandomStringUtils.randomAlphanumeric(10).toLowerCase();
 
         question = RandomStringUtils.randomAlphanumeric(10).toLowerCase();
         content = RandomStringUtils.randomAlphanumeric(10).toLowerCase();
         content2 = RandomStringUtils.randomAlphanumeric(10).toLowerCase();
+        commodity = RandomStringUtils.randomAlphanumeric(10).toLowerCase();
+
     }
     abstract public String init();
     abstract public String createtable();

@@ -192,34 +192,78 @@ db = p.getProperty(DB_PROPERTY,"cassandra");
             Object obj = instance.newInstance();
             Method[] methods = instance.getMethods();
            // System.out.println("getMethods获取的方法：");
+/*
+            Field fieldRequest=null;
+            if(instance.getDeclaredField("request")!=null)
+                 fieldRequest = instance.getDeclaredField("request");
+
+            Field fieldTypeid=null;
+            if(instance.getDeclaredField("typid")!=null)
+                fieldTypeid = instance.getDeclaredField("typid");
+
+            Field fieldloopStartIndex =null;
+            if(instance.getDeclaredField("loopStartIndex")!=null)
+                fieldloopStartIndex = instance.getDeclaredField("loopStartIndex");
+
+
+            Field fieldtweet =null;
+            if(instance.getDeclaredField("tweet")!=null)
+                fieldtweet= instance.getDeclaredField("tweet");
+
+            Field fielddescri =null;
+            if(instance.getDeclaredField("descri")!=null)
+                fielddescri = instance.getDeclaredField("descri");
+
+
+            Field fielddescri2=null;
+            if(instance.getDeclaredField("descri2")!=null)
+                fielddescri2 = instance.getDeclaredField("descri2");
+
+
+            Field fieldcontent=null;
+            if(instance.getDeclaredField("content")!=null)
+                fieldcontent = instance.getDeclaredField("content");
+
+
+            Field fieldcommodity =null;
+            if(instance.getDeclaredField("commodity")!=null)
+                fieldcommodity  = instance.getDeclaredField("commodity");
+
+
+            Field fieldquestion =null;
+            if(instance.getDeclaredField("question")!=null)
+                fieldquestion = instance.getDeclaredField("question");
+*/
             Field fieldRequest = instance.getDeclaredField("request");
             Field fieldTypeid = instance.getDeclaredField("typid");
             Field fieldloopStartIndex = instance.getDeclaredField("loopStartIndex");
-            Field fieldtweet = instance.getDeclaredField("tweet");
-            Field fielddescri = instance.getDeclaredField("descri");
-            Field fielddescri2 = instance.getDeclaredField("descri2");
-            Field fieldcontent = instance.getDeclaredField("content");
-            Field commodity = instance.getDeclaredField("commodity");
-            Field question = instance.getDeclaredField("question");
+
+            Field fieldtweet = instance.getField("tweet");
+            Field fielddescri = instance.getField("descri");
+            Field fielddescri2 = instance.getField("descri2");
+            Field fieldcontent = instance.getField("content");
+            Field fieldcommodity = instance.getField("commodity");
+            Field fieldquestion = instance.getField("question");
 
 
             fieldtweet.setAccessible(true);
             fieldloopStartIndex.setAccessible(true);
             fieldTypeid.setAccessible(true);
             fieldRequest.setAccessible(true);
+            fieldcommodity.setAccessible(true);
+            fieldquestion.setAccessible(true);
             typid = (int)fieldTypeid.get(obj);
             loopStartIndex = (int)fieldloopStartIndex.get(obj);
-            Method m = instance.getMethod("combine");
-            m.invoke(obj);
-            request = (ArrayList<String>) fieldRequest.get(obj);
-         //   System.out.println(field.get(obj));
 
+            request = (ArrayList<String>) fieldRequest.get(obj);
             content = (String) fieldcontent.get(obj);
             descri = (String) fielddescri.get(obj);
             descri2 = (String) fielddescri2.get(obj);
             tweet = (String) fieldtweet.get(obj);
-
-
+            commodity = (String) fieldcommodity.get(obj);
+            question = (String) fieldquestion.get(obj);
+            Method m = instance.getMethod("combine");
+            m.invoke(obj);
         }catch (Exception e){
             e.printStackTrace();
         }

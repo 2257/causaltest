@@ -29,7 +29,7 @@ public class ViolationChecker
     }
     public ViolationChecker(String descri,String descri2,String content,String tweet)
     {
-        pool = new JedisPool("redis://192.168.7.125:6379/10");
+       // pool = new JedisPool("redis://192.168.7.125:6379/10");
         this.descri2 = descri2;
         this.content = content;
         this.tweet = tweet;
@@ -56,10 +56,10 @@ public class ViolationChecker
         if(i==0)
         {
             //violation_size error
-            incr("exception");
+          //  incr("exception");
             System.out.println("[violate_size] num:"+num+",proportion:"+(float)num/loop+"---"+df.format(System.currentTimeMillis()));
         }else{
-            incr("violation");
+          //  incr("violation");
             System.out.println("[violate] num:"+num+",proportion:"+(float)num/loop+"---"+df.format(System.currentTimeMillis()));
 
         }

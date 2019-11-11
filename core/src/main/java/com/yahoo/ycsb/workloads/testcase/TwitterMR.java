@@ -15,6 +15,9 @@ public abstract class TwitterMR implements MonotonicRead {
     public String descri;
     public String descri2;
     public String content2;
+    public String commodity;
+    public String question;
+
     public List<String> request = new ArrayList<>();
 
     public TwitterMR()
@@ -25,6 +28,8 @@ public abstract class TwitterMR implements MonotonicRead {
         moment = RandomStringUtils.randomNumeric(19);
         content = RandomStringUtils.randomNumeric(19);
         content2 = RandomStringUtils.randomNumeric(19);
+        commodity = "";
+        question = "";
     }
     abstract public String init();
     abstract public String createtable();

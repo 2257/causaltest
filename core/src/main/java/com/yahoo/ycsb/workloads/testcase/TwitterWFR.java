@@ -15,7 +15,8 @@ public abstract class TwitterWFR implements WriteFollowRead {
     public String descri2;
     public String content2;
     public List<String> request = new ArrayList<>();
-
+    public String commodity;
+    public String question;
     public TwitterWFR()
     {
         user = RandomStringUtils.randomNumeric(19);
@@ -23,6 +24,8 @@ public abstract class TwitterWFR implements WriteFollowRead {
         tweet2 = RandomStringUtils.randomNumeric(19);
         content = RandomStringUtils.randomNumeric(19);
         content2 = RandomStringUtils.randomNumeric(19);
+        commodity = "";
+        question = "";
     }
     abstract public String init();
     abstract public String createtable();
