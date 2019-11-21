@@ -36,7 +36,7 @@ public class MongodbOp implements Operation
     private static String privateIP1 = "privateIP1";
     private static String privateIP2 = "privateIP2";
     private static String privateIP3 = "privateIP3";
-    private static String database = "sample_supplies";
+    private static String database = "mongodb_database";//"sample_supplies";
 	private static String port = "mongodb_port";
 
     @Override
