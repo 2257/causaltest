@@ -1,11 +1,13 @@
 package com.yahoo.ycsb.workloads;
 
+import com.alibaba.fastjson.JSON;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 
 import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 public class ViolationChecker
@@ -52,15 +54,18 @@ public class ViolationChecker
     }
     public void printViolationInfo(int i,int num,int loop)
     {
-        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        Date date = new Date();
+        //  SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         if(i==0)
         {
             //violation_size error
           //  incr("exception");
-            System.out.println("[violate_size] num:"+num+",proportion:"+(float)num/loop+"---"+df.format(System.currentTimeMillis()));
+            System.out.println("{\"type\":\"exception\",\"num\":\""+num+"\",\"time\":\""+JSON.toJSONStringWithDateFormat(date, "yyyy-MM-dd HH:mm:ss.SSS")+"\"");
+          //  System.out.println("[violate_size] num:"+num+",proportion:"+(float)num/loop+"---"+df.format(System.currentTimeMillis()));
         }else{
           //  incr("violation");
-            System.out.println("[violate] num:"+num+",proportion:"+(float)num/loop+"---"+df.format(System.currentTimeMillis()));
+        //    System.out.println("[violate] num:"+num+",proportion:"+(float)num/loop+"---"+df.format(System.currentTimeMillis()));
+            System.out.println("{\"type\":\"violation\",\"num\":\""+num+"\",\"time\":\""+JSON.toJSONStringWithDateFormat(date, "yyyy-MM-dd HH:mm:ss.SSS")+"\"");
 
         }
     }

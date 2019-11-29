@@ -56,7 +56,7 @@ public class MongodbTwitterMW extends TwitterMW
     {
         request.add(init());
         request.add(createtable());
-        request.add(insert());
+       // request.add(insert());
         request.add(insert2());
         request.add(insert3());
         request.add(read());

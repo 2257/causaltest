@@ -128,7 +128,7 @@ properties.load(new FileInputStream("src/main/resources/conf.properties"));
     long st = System.currentTimeMillis();
     HashMap<String, String> result = new HashMap<>();
     String re="";
-    ConsistencyLevel readConsistencyLevel = ConsistencyLevel.ONE;
+    ConsistencyLevel readConsistencyLevel = ConsistencyLevel.LOCAL_QUORUM;//ConsistencyLevel.ONE;
 	readConsistencyLevel = ConsistencyLevel.valueOf(properties.getProperty(readConsistencyLevelValue));
     SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
@@ -250,7 +250,7 @@ properties.load(new FileInputStream("src/main/resources/conf.properties"));
   public String insert(String table, String KEYROW, String key, String col, String val,int clientFlag) throws IOException
   {
 	properties.load(new FileInputStream("src/main/resources/conf.properties"));  
-	  ConsistencyLevel writeConsistencyLevel = ConsistencyLevel.ONE;
+	  ConsistencyLevel writeConsistencyLevel = //ConsistencyLevel.ONE;
    // System.out.println("zhaoleinsert:"+properties.getProperty(writeConsistencyLevelValue));
 
 	writeConsistencyLevel = ConsistencyLevel.valueOf(properties.getProperty(writeConsistencyLevelValue));
