@@ -60,12 +60,12 @@ public class ViolationChecker
         {
             //violation_size error
           //  incr("exception");
-            System.out.println("{\"type\":\"exception\",\"num\":\""+num+"\",\"time\":\""+JSON.toJSONStringWithDateFormat(date, "yyyy-MM-dd HH:mm:ss.SSS")+"\"");
+            System.out.println("{\"type\":\"exception\",\"num\":\""+num+"\",\"time\":"+JSON.toJSONStringWithDateFormat(date, "yyyy-MM-dd HH:mm:ss.SSS")+"");
           //  System.out.println("[violate_size] num:"+num+",proportion:"+(float)num/loop+"---"+df.format(System.currentTimeMillis()));
         }else{
           //  incr("violation");
         //    System.out.println("[violate] num:"+num+",proportion:"+(float)num/loop+"---"+df.format(System.currentTimeMillis()));
-            System.out.println("{\"type\":\"violation\",\"num\":\""+num+"\",\"time\":\""+JSON.toJSONStringWithDateFormat(date, "yyyy-MM-dd HH:mm:ss.SSS")+"\"");
+            System.out.println("{\"type\":\"violation\",\"num\":\""+num+"\",\"time\":"+JSON.toJSONStringWithDateFormat(date, "yyyy-MM-dd HH:mm:ss.SSS")+"");
 
         }
     }
