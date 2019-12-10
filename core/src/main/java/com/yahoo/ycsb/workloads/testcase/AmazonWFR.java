@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public abstract class AmazonWFR implements WriteFollowRead {
+    public String tweet;
     public String commodity;
     public String commodity2;
     public String descri;
@@ -22,6 +23,7 @@ public abstract class AmazonWFR implements WriteFollowRead {
         commodity2 = RandomStringUtils.randomAlphanumeric(10).toLowerCase();
         descri = RandomStringUtils.randomAlphanumeric(10).toLowerCase();
         descri2 = RandomStringUtils.randomAlphanumeric(10).toLowerCase();
+        tweet = RandomStringUtils.randomAlphanumeric(10).toLowerCase();
 
         question = RandomStringUtils.randomAlphanumeric(10).toLowerCase();
         content = RandomStringUtils.randomAlphanumeric(10).toLowerCase();

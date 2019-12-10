@@ -11,34 +11,52 @@ public abstract class FlickrMR implements MonotonicRead{
     public String picture2;
     public String content;
     public String content2;
+
+    public String descri;
+    public String user;
+    public String tag;
+    public String tag2;
     public List<String> request = new ArrayList<>();
 
+    public String tweet;
+    public String descri2;
+    public String commodity;
+    public String question;
     public FlickrMR()
     {
+        descri="";
+        user="";
+        tag="";
+        tag2= "";
+        tweet="";
+        descri2="";
+        commodity="";
+        question="";
+
 
         picture = "yui"+"_"+ RandomStringUtils.randomAlphanumeric(1).toLowerCase()
                 +"_"+RandomStringUtils.randomAlphanumeric(2).toLowerCase()
                 +"_"+RandomStringUtils.randomAlphanumeric(1).toLowerCase()
                 +"_"+RandomStringUtils.randomAlphanumeric(1).toLowerCase()
-                +"_"+RandomStringUtils.randomAlphanumeric(13).toLowerCase()
+                +"_"+RandomStringUtils.randomAlphanumeric(3).toLowerCase()
                 +"_"+RandomStringUtils.randomAlphanumeric(4).toLowerCase();
         picture2 = "yui"+"_"+ RandomStringUtils.randomAlphanumeric(1).toLowerCase()
                 +"_"+RandomStringUtils.randomAlphanumeric(2).toLowerCase()
                 +"_"+RandomStringUtils.randomAlphanumeric(1).toLowerCase()
                 +"_"+RandomStringUtils.randomAlphanumeric(1).toLowerCase()
-                +"_"+RandomStringUtils.randomAlphanumeric(13).toLowerCase()
+                +"_"+RandomStringUtils.randomAlphanumeric(3).toLowerCase()
                 +"_"+RandomStringUtils.randomAlphanumeric(4).toLowerCase();
         content = "yui"+"_"+RandomStringUtils.randomAlphanumeric(1).toLowerCase()
                 +"_"+RandomStringUtils.randomAlphanumeric(2).toLowerCase()
                 +"_"+RandomStringUtils.randomAlphanumeric(1).toLowerCase()
                 +"_"+RandomStringUtils.randomAlphanumeric(1).toLowerCase()
-                +"_"+RandomStringUtils.randomAlphanumeric(13).toLowerCase()
+                +"_"+RandomStringUtils.randomAlphanumeric(3).toLowerCase()
                 +"_"+RandomStringUtils.randomAlphanumeric(4).toLowerCase();
         content2 = "yui"+"_"+RandomStringUtils.randomAlphanumeric(1).toLowerCase()
                 +"_"+RandomStringUtils.randomAlphanumeric(2).toLowerCase()
                 +"_"+RandomStringUtils.randomAlphanumeric(1).toLowerCase()
                 +"_"+RandomStringUtils.randomAlphanumeric(1).toLowerCase()
-                +"_"+RandomStringUtils.randomAlphanumeric(13).toLowerCase()
+                +"_"+RandomStringUtils.randomAlphanumeric(3).toLowerCase()
                 +"_"+RandomStringUtils.randomAlphanumeric(4).toLowerCase();
     }
     abstract public String init();

@@ -20,7 +20,7 @@ public class MysqlAmazonMR extends AmazonMR
 
     public String init()
     {
-        return  "?type=init";
+        return "?type=init";
     }
     public String createtable()
     {

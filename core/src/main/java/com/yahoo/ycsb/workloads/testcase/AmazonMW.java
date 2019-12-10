@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public abstract class AmazonMW implements MonotonicWrite {
+    public String tweet;
     public String commodity;
     public String descri;
     public String descri2;
@@ -19,6 +20,8 @@ public abstract class AmazonMW implements MonotonicWrite {
         commodity = RandomStringUtils.randomAlphanumeric(10).toLowerCase();
         descri = RandomStringUtils.randomAlphanumeric(10).toLowerCase();
         descri2 = RandomStringUtils.randomAlphanumeric(10).toLowerCase();
+        tweet = RandomStringUtils.randomAlphanumeric(10).toLowerCase();
+
         question = RandomStringUtils.randomAlphanumeric(10).toLowerCase();
         content = RandomStringUtils.randomAlphanumeric(10).toLowerCase();
         content2 = RandomStringUtils.randomAlphanumeric(10).toLowerCase();

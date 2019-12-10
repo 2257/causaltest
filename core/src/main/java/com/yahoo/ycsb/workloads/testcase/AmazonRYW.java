@@ -12,13 +12,23 @@ public abstract class AmazonRYW implements ReadYourWrite
     public String comment;
     public String commodity;
     public String descri;
+    public String tweet;
+    public String descri2;
     public List<String> request = new ArrayList<>();
-
+    public String content;
+    public String content2;
+    public String question;
     public AmazonRYW()
     {
         comment = RandomStringUtils.randomAlphanumeric(10).toLowerCase();
         commodity = RandomStringUtils.randomAlphanumeric(10).toLowerCase();
         descri = RandomStringUtils.randomAlphanumeric(10).toLowerCase();
+        descri2 = RandomStringUtils.randomAlphanumeric(10).toLowerCase();
+        tweet = RandomStringUtils.randomAlphanumeric(10).toLowerCase();
+        question = RandomStringUtils.randomAlphanumeric(10).toLowerCase();
+        content = RandomStringUtils.randomAlphanumeric(10).toLowerCase();
+        content2 = RandomStringUtils.randomAlphanumeric(10).toLowerCase();
+        commodity = RandomStringUtils.randomAlphanumeric(10).toLowerCase();
     }
     abstract public String init();
     abstract public String createtable();

@@ -24,13 +24,9 @@ public abstract class TwitterRYW implements ReadYourWrite
         user = RandomStringUtils.randomNumeric(19);
         tweet = RandomStringUtils.randomNumeric(19);
         descri = RandomStringUtils.randomNumeric(19);
-
         descri2 = RandomStringUtils.randomNumeric(19);
-
         commodity = RandomStringUtils.randomNumeric(19);
-
         question = RandomStringUtils.randomNumeric(19);
-
         content = RandomStringUtils.randomNumeric(19);
 
     }
